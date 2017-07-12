@@ -23,11 +23,22 @@ require(['config'],function(){
 			var searchHot={
 					list:data
 				};
-			var html = template('search-hot',searchHot);console.log(data)
-			console.log(html);
+			var html = template('search-hot',searchHot);
 			$('.wrap .center .bottom').html(html);
 		});
-
 		
+		$.getJSON('/data/theameMark.json',function(data){
+			var theame={
+					list:data
+				};
+			var html = template('theamemark',theame);
+			$('.banner .wrap ul').html(html);
+
+			$('.banner ul li').hover(function(){console.log(0)
+				$(this).css('background-color','white');
+			},function(){
+				$(this).css('background-color','');
+			});
+		});
 	});
 });

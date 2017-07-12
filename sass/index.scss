@@ -265,22 +265,48 @@
 		width: 257px;
 		height: 436px;
 		padding-top: 4px;
-		background-color: #fff;
-		opacity: 0.5;
+		background-color: rgba(255,255,255,0.8);
 		li{
+			&:hover{
+				border-left:2px solid red;
+				dt{
+					margin-left: 17px;
+				}
+			};
 			height: 31px;
 			line-height: 31px;
+			opacity: 1;
 			dl{
 				dt{
 					margin-left: 19px;
 					margin-right: 12px;
-					font-size: 13px;
+					font-size: 14px;
 					font-weight: bold;
 					float: left;
+					a{
+						color: #000;
+						&:hover{
+							text-decoration:underline;
+						}
+					};
 				};
 				dd{
 					float: left;
 					margin-right: 19px;
+					a{
+						color: #666666;
+						font-size: 11px;
+						&.hot{
+							padding-right: 15px;
+							background: url(../img/iconimg/icon8.jpg) no-repeat right -1px;
+						};
+						&:hover{
+							text-decoration:underline;
+						};
+					};
+				};
+				dd:last-child{
+					margin-right: 0;
 				}
 			}	
 		}

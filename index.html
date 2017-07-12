@@ -62,119 +62,26 @@
 <div class="banner">
 	<div class="wrap">
 		<ul>
-			<li>
-				<dl>
-					<dt><a href="#">上衣</a></dt>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-				</dl>
-			</li>
-
-			<li>
-				<dl>
-					<dt><a href="#">上衣</a></dt>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-				</dl>
-			</li>
-			<li>
-				<dl>
-					<dt><a href="#">上衣</a></dt>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-				</dl>
-			</li>
-			<li>
-				<dl>
-					<dt><a href="#">上衣</a></dt>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-				</dl>
-			</li>
-			<li>
-				<dl>
-					<dt><a href="#">上衣</a></dt>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-				</dl>
-			</li>
-			<li>
-				<dl>
-					<dt><a href="#">上衣</a></dt>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-				</dl>
-			</li>
-			<li>
-				<dl>
-					<dt><a href="#">上衣</a></dt>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-				</dl>
-			</li>
-			<li>
-				<dl>
-					<dt><a href="#">上衣</a></dt>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-				</dl>
-			</li>
-			<li>
-				<dl>
-					<dt><a href="#">上衣</a></dt>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-				</dl>
-			</li>
-			<li>
-				<dl>
-					<dt><a href="#">上衣</a></dt>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-				</dl>
-			</li>
-			<li>
-				<dl>
-					<dt><a href="#">上衣</a></dt>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-				</dl>
-			</li>
-			<li>
-				<dl>
-					<dt><a href="#">上衣</a></dt>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-				</dl>
-			</li>
-			<li>
-				<dl>
-					<dt><a href="#">上衣</a></dt>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-				</dl>
-			</li>
-			<li>
-				<dl>
-					<dt><a href="#">上衣</a></dt>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-					<dd><a href="#">下上新</a></dd>
-				</dl>
-			</li>
+			<script type="text/html" id="theamemark">
+				<% for(var i=0,len=list.length;i<len;i++){
+				    var now=list[i];
+				%>
+					<li>
+						<dl>
+							<dt><a href="#"><%= now.title %></a></dt>
+							<% for(var j=0;j<now.titleCon.length;j++){
+								var nowtitle=now.titleCon[j];
+							%>
+								<% if(nowtitle.hot){ %>
+									<dd><a class="hot" href="#"><%= nowtitle.name %></a></dd>
+								<% }else{ %>
+									<dd><a href="#"><%= nowtitle.name %></a></dd>
+								<% } %>
+							<% } %>
+						</dl>
+					</li>	
+				<% } %>
+			</script>
 		</ul>
 	</div>
 </div>
