@@ -1,0 +1,27 @@
+//分区
+[
+	{
+		"title":"品牌特卖",
+		"hotsearch":[
+			{"name":"植美村","url":"http://act.mogujie.com/brandtuan/pc/shop?brandId=1azueo&acm=3.mce.1_10_1a9uo.32483.0.ph9Epqp4UbkYb.m_239636-pos_0-mf_15261_485411-idx_0-mfs_20&ptp=1._mf1_1239_15261._keyword_32483.0.VRFbWZ&f=baidusem_4uv5iimn1v"},
+			{"name":"自然堂","url":"http://act.mogujie.com/brandtuan/pc/shop?brandId=1azueo&acm=3.mce.1_10_1a9uo.32483.0.ph9Epqp4UbkYb.m_239636-pos_0-mf_15261_485411-idx_0-mfs_20&ptp=1._mf1_1239_15261._keyword_32483.0.VRFbWZ&f=baidusem_4uv5iimn1v"},
+			{"name":"森马","url":"http://act.mogujie.com/brandtuan/pc/shop?brandId=1azueo&acm=3.mce.1_10_1a9uo.32483.0.ph9Epqp4UbkYb.m_239636-pos_0-mf_15261_485411-idx_0-mfs_20&ptp=1._mf1_1239_15261._keyword_32483.0.VRFbWZ&f=baidusem_4uv5iimn1v"},
+			{"name":"御泥坊","url":"http://act.mogujie.com/brandtuan/pc/shop?brandId=1azueo&acm=3.mce.1_10_1a9uo.32483.0.ph9Epqp4UbkYb.m_239636-pos_0-mf_15261_485411-idx_0-mfs_20&ptp=1._mf1_1239_15261._keyword_32483.0.VRFbWZ&f=baidusem_4uv5iimn1v"},
+			{"name":"爱爱丸","url":"http://act.mogujie.com/brandtuan/pc/shop?brandId=1azueo&acm=3.mce.1_10_1a9uo.32483.0.ph9Epqp4UbkYb.m_239636-pos_0-mf_15261_485411-idx_0-mfs_20&ptp=1._mf1_1239_15261._keyword_32483.0.VRFbWZ&f=baidusem_4uv5iimn1v"}
+		],
+		"left":{
+			"hotword":[
+				{"name":"衬衫","url":"http://list.mogujie.com/book/clothing/50249?searchTag=400&acm=3.mce.1_10_1a9wi.37428.0.zlmCAqp4UlOoc.m_239669-pos_0-mf_15261_485411-mfs_20&ptp=1._mf1_1239_15261._keyword_37428.0.VRFbWZ&f=baidusem_4uv5iimn1v"},
+				{"name":"绑带鞋","url":"http://list.mogujie.com/book/shoes/10056054?searchTag=400&acm=3.mce.1_10_1b1fy.37428.0.zlmCAqp4UlOoc.m_257515-pos_1-mf_15261_485411-mfs_20&ptp=1._mf1_1239_15261._keyword_37428.0.VRFbWZ&f=baidusem_4uv5iimn1v"},
+				{"name":"双肩包","url":"http://list.mogujie.com/book/bags/50657?searchTag=400&acm=3.mce.1_10_1b1fu.37428.0.zlmCAqp4UlOoc.m_257513-pos_2-mf_15261_485411-mfs_20&ptp=1._mf1_1239_15261._keyword_37428.0.VRFbWZ&f=baidusem_4uv5iimn1v"},
+				{"name":"运动套装","url":"http://list.mogujie.com/book/sports/10059141?searchTag=400&acm=3.mce.1_10_1a9wo.37428.0.zlmCAqp4UlOoc.m_239672-pos_3-mf_15261_485411-mfs_20&ptp=1._mf1_1239_15261._keyword_37428.0.VRFbWZ&f=baidusem_4uv5iimn1v"},
+				{"name":"休闲裤","url":"http://list.mogujie.com/book/boyfriend/50615?searchTag=400&acm=3.mce.1_10_1a9wq.37428.0.zlmCAqp4UlOoc.m_239673-pos_4-mf_15261_485411-mfs_20&ptp=1._mf1_1239_15261._keyword_37428.0.VRFbWZ&f=baidusem_4uv5iimn1v"},
+				{"name":"口红","url":"http://list.mogujie.com/book/magic/51927?searchTag=400&acm=3.mce.1_10_1b1fw.37428.0.zlmCAqp4UlOoc.m_257514-pos_5-mf_15261_485411-mfs_20&ptp=1._mf1_1239_15261._keyword_37428.0.VRFbWZ&f=baidusem_4uv5iimn1v"}
+			],
+			"description":["品牌精选","潮牌尖货 夏季焕新"],
+			"imgUrl":"http://s2.mogucdn.com/mlcdn/c45406/170517_3de3331ea4ahei787bjhikilfgk1j_300x320.jpg_200x9999.v1c7E.70.webp",
+			"ulr":"http://act.mogujie.com/brandlist?acm=3.mce.1_10_1c32i.18861.0.zlmCAqp4UlOna.m_281897-pos_0-mf_15261_485411-idx_5-mfs_20&ptp=1._mf1_1239_15261._keyword_18861.0.VRFbWZ&f=baidusem_4uv5iimn1v"
+		},
+		"center":[]
+	},
+]

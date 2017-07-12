@@ -1,0 +1,30 @@
+//轮播图片
+[
+	{
+		"title":"http://s10.mogucdn.com/mlcdn/c45406/170607_7ck3i2j10dldef442ba83b75aj5jh_750x376.jpg_400x9999.v1c7E.70.webp",
+		"content":[
+			["http://s3.mogucdn.com/mlcdn/c45406/170607_75fhda363454fhi01jic4jeafldkh_640x960.jpg_100x100.v1cAC.70.webp",89.00],
+			["http://s2.mogucdn.com/p2/161207/63653807_4i0klf51jb44bf92djg5aldi9ad5g_640x960.jpg_100x100.v1cAC.70.webp",99.40],
+			["http://s2.mogucdn.com/mlcdn/c45406/170508_3k56c9bhg6i7gf9h90g3a4ld54idd_750x1125.jpg_100x100.v1cAC.70.webp",66.65],
+			["http://s3.mogucdn.com/mlcdn/c45406/170325_774118abhl3ki5j7gg57g99c8ig78_640x960.jpg_100x100.v1cAC.70.webp",69.66]
+		]		
+	},
+	{
+		"title":"http://s10.mogucdn.com/mlcdn/c45406/170608_781k8ci92c446f6835a9b1gg4ehh4_750x376.jpg_400x9999.v1c7E.70.webp",
+		"content":[
+			["http://s3.mogucdn.com/mlcdn/c45406/170524_7i3kijh7b9haj1bd95341g838i8l3_640x960.jpg_468x468.webp",89.00],
+			["http://s2.mogucdn.com/mlcdn/c45406/170518_82gc91il3ece93846g58284732292_640x960.jpg_100x100.v1cAC.70.webp",99.40],
+			["http://s2.mogucdn.com/mlcdn/c45406/170518_2kh83jjf56472afjai1jgi9jk66e2_640x960.jpg_100x100.v1cAC.70.webp",66.65],
+			["http://s3.mogucdn.com/mlcdn/c45406/170608_7j6b04d29lcj8ag2e6a11hf262d6e_415x622.jpg_100x100.v1cAC.70.webp",69.66]
+		]		
+	},
+	{
+		"title":"http://s10.mogucdn.com/mlcdn/c45406/170601_6k992756bi86gk6h74l60e7l3ggf4_750x376.jpg_400x9999.v1c7E.70.webp",
+		"content":[
+			["http://s11.mogucdn.com/mlcdn/c45406/170620_5eakb4ibgj93727cf9hb31hda23a5_750x985.jpg_100x100.v1cAC.70.webp",89.00],
+			["http://s2.mogucdn.com/p2/170312/147351147_2g8hj73igc6af42jbh8ikbgki80b6_640x960.jpg_100x100.v1cAC.70.webp",99.40],
+			["http://s3.mogucdn.com/mlcdn/c45406/170407_6e7bi40bedl0b58jhaclej3d92h38_640x960.jpg_100x100.v1cAC.70.webp",66.65],
+			["http://s3.mogucdn.com/mlcdn/c45406/170420_7hchk7dklkb89ckl0jig0abh4e89f_640x960.jpg_100x100.v1cAC.70.webp",69.66]
+		]		
+	}
+]
