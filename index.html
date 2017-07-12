@@ -4,13 +4,180 @@
 	<meta charset='utf-8' /> 
 	<title>蘑菇街-我的买手街</title>
 	<link rel="icon" href="https://s10.mogucdn.com/new1/v1/bmisc/3ce382db3c8aaca5d07bd36711e77134/171169993508.ico" type="image/x-icon" />
-	<link rel="stylesheet" type="text/css" href="css/cssmin/init.css">
-	<link rel="stylesheet" type="text/css" href="css/cssmin/index.css">
-	<script src="jquery/jquery-1.12.4.min.js" ></script>	
+	<link rel="stylesheet" type="text/css" href="css/init.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
 <div class="header"></div>
-<script type="text/javascript">
-</script>
+
+<div class="search">
+	<div class="wrap">
+		<a href="#">蘑菇街</a>
+		<div class="center fl">
+			<div class="top">
+				<div class="top-l fl">
+					<span class="searchgood">搜商品</span>
+					<ul>
+						<li><a href="#">商品</a></li>
+						<li><a href="#">店铺</a></li>
+					</ul>
+				</div>
+				<form class="fr">
+					<input class='txt fl' type="text" placeholder="露背无袖连衣裙" />
+					<input class='btn fl' type="submit" value="搜 索" />
+					<div class="history">
+						<h3>历史记录</h3>
+					</div>
+				</form>
+			</div>
+			<div class="bottom">
+				<script type="text/html" id="search-hot">
+					<% for(var i=0;i<list.length;i++) {
+						var hotwho=list[i];
+					 %>
+					 	<% if(hotwho.hot) { %>
+							<a href="#" class="hot"><%= hotwho.content %></a>
+						<% }else{ %>
+							<a href="#"><%= hotwho.content %></a>
+						<% } %>
+					<% } %>
+				</script>
+			</div>
+		</div>
+		<img src="img/saoys.png" class="fr" />
+	</div>
+</div>
+
+<div class="bantitle">
+	<div class="wrap">
+		<div><a href="#">主题市场</a></div>
+		<ul>
+			<li><a href="#">省钱团购</a></li>
+			<li>|</li>
+			<li><a href="#">品质优选</a></li>
+		</ul>	
+	</div>
+</div>
+
+<div class="banner">
+	<div class="wrap">
+		<ul>
+			<li>
+				<dl>
+					<dt><a href="#">上衣</a></dt>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+				</dl>
+			</li>
+
+			<li>
+				<dl>
+					<dt><a href="#">上衣</a></dt>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><a href="#">上衣</a></dt>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><a href="#">上衣</a></dt>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><a href="#">上衣</a></dt>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><a href="#">上衣</a></dt>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><a href="#">上衣</a></dt>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><a href="#">上衣</a></dt>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><a href="#">上衣</a></dt>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><a href="#">上衣</a></dt>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><a href="#">上衣</a></dt>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><a href="#">上衣</a></dt>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><a href="#">上衣</a></dt>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><a href="#">上衣</a></dt>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+					<dd><a href="#">下上新</a></dd>
+				</dl>
+			</li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript" src="lib/requirejs/require.js" data-main="js/index"></script>
 </body>
 </html>
