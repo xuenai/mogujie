@@ -1,0 +1,28 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.clear {
+  zoom: 1; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+a {
+  text-decoration: none; }
+
+body {
+  font-family: "微软雅黑";
+  font-size: 12px; }
+
+li {
+  list-style: none; }
