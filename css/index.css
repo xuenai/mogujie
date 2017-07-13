@@ -1,4 +1,4 @@
-.w1200, .search .wrap, .bantitle .wrap, .banner .wrap {
+.w1200, .search .wrap, .bantitle .wrap, .banner .wrap, .xians .wrap {
   width: 1200px;
   margin: 0 auto; }
 
@@ -204,40 +204,243 @@
 
 .banner {
   height: 440px;
-  background-color: #b5a4bc; }
-  .banner ul {
-    width: 257px;
-    height: 436px;
-    padding-top: 4px;
-    background-color: rgba(255, 255, 255, 0.8); }
-    .banner ul li {
-      height: 31px;
-      line-height: 31px;
-      opacity: 1; }
-      .banner ul li:hover {
-        border-left: 2px solid red; }
-        .banner ul li:hover dt {
-          margin-left: 17px; }
-      .banner ul li dl dt {
-        margin-left: 19px;
-        margin-right: 12px;
-        font-size: 14px;
-        font-weight: bold;
-        float: left; }
-        .banner ul li dl dt a {
-          color: #000; }
-          .banner ul li dl dt a:hover {
-            text-decoration: underline; }
-      .banner ul li dl dd {
+  background-color: white; }
+  .banner .wrap {
+    position: relative; }
+    .banner .wrap > ul {
+      float: left;
+      width: 257px;
+      height: 436px;
+      padding-top: 4px;
+      background-color: rgba(255, 255, 255, 0.8); }
+      .banner .wrap > ul li {
+        height: 31px;
+        line-height: 31px;
+        opacity: 1; }
+        .banner .wrap > ul li:hover {
+          border-left: 2px solid red; }
+          .banner .wrap > ul li:hover dt {
+            margin-left: 17px; }
+        .banner .wrap > ul li dl dt {
+          margin-left: 19px;
+          margin-right: 12px;
+          font-size: 14px;
+          font-weight: bold;
+          float: left; }
+          .banner .wrap > ul li dl dt a {
+            color: #000; }
+            .banner .wrap > ul li dl dt a:hover {
+              text-decoration: underline; }
+        .banner .wrap > ul li dl dd {
+          float: left;
+          margin-right: 19px; }
+          .banner .wrap > ul li dl dd a {
+            color: #666666;
+            font-size: 11px; }
+            .banner .wrap > ul li dl dd a.hot {
+              padding-right: 15px;
+              background: url(../img/iconimg/icon8.jpg) no-repeat right -1px; }
+            .banner .wrap > ul li dl dd a:hover {
+              text-decoration: underline; }
+        .banner .wrap > ul li dl dd:last-child {
+          margin-right: 0; }
+    .banner .wrap .show {
+      position: absolute;
+      background: #fff;
+      left: 257px;
+      top: 0px;
+      width: 757px;
+      padding-left: 20px;
+      height: 440px;
+      z-index: 10; }
+      .banner .wrap .show .left {
+        width: 500px;
+        height: 100%; }
+        .banner .wrap .show .left h3 {
+          font-size: 14px;
+          height: 39px;
+          line-height: 39px; }
+        .banner .wrap .show .left p.title {
+          height: 25px;
+          line-height: 25px;
+          border-bottom: 1px solid #e5e5e5; }
+          .banner .wrap .show .left p.title a {
+            color: #444; }
+        .banner .wrap .show .left .content {
+          line-height: 25px;
+          padding-top: 10px;
+          padding-bottom: 15px; }
+          .banner .wrap .show .left .content a {
+            color: #999;
+            margin-right: 20px; }
+            .banner .wrap .show .left .content a.hot {
+              color: #ff0077; }
+        .banner .wrap .show .left .last img {
+          margin: 5px 42px 0 0; }
+      .banner .wrap .show .right {
+        width: 221px;
+        height: 100%;
+        margin-right: 18px; }
+        .banner .wrap .show .right h3 {
+          height: 22px;
+          line-height: 22px;
+          font-size: 16px;
+          text-align: center;
+          margin-top: 9px; }
+        .banner .wrap .show .right > p {
+          height: 20px;
+          line-height: 20px;
+          color: #666;
+          text-align: center;
+          font-weight: bold; }
+        .banner .wrap .show .right > a {
+          display: block;
+          width: 100px;
+          height: 120px;
+          color: #444;
+          margin-top: 5px; }
+          .banner .wrap .show .right > a:hover {
+            opacity: 0.7; }
+          .banner .wrap .show .right > a .price {
+            height: 20px;
+            line-height: 20px;
+            font-size: 9px;
+            text-align: center; }
+          .banner .wrap .show .right > a .top {
+            position: relative; }
+            .banner .wrap .show .right > a .top img {
+              display: block; }
+            .banner .wrap .show .right > a .top div {
+              position: absolute;
+              width: 100px;
+              bottom: 0;
+              height: 21px;
+              line-height: 21px;
+              background: rgba(255, 255, 255, 0.6);
+              font-size: 11px;
+              text-overflow: ellipsis;
+              overflow: hidden; }
+    .banner .wrap .rgt {
+      width: 166px; }
+      .banner .wrap .rgt > div {
+        height: 205px;
+        margin-top: 10px;
+        background: rgba(255, 255, 255, 0.8);
+        overflow: hidden; }
+      .banner .wrap .rgt .personCenter .tou {
+        display: block;
+        width: 72px;
+        height: 72px;
+        border-radius: 36px;
+        background: url(../img/tou.png) no-repeat center center #ff94c6;
+        background-size: 30px 30px;
+        margin: 10px auto 0; }
+      .banner .wrap .rgt .personCenter p {
+        height: 30px;
+        line-height: 30px;
+        text-align: center; }
+        .banner .wrap .rgt .personCenter p span:first-child {
+          color: #666; }
+        .banner .wrap .rgt .personCenter p span:last-child {
+          color: #333; }
+      .banner .wrap .rgt .personCenter div {
+        width: 72px;
+        height: 24px;
+        border: 1px solid #ff5777;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 24px; }
+        .banner .wrap .rgt .personCenter div a {
+          color: #ff5777; }
+      .banner .wrap .rgt .ad {
+        text-align: center; }
+        .banner .wrap .rgt .ad img {
+          width: 130px;
+          height: 130px; }
+        .banner .wrap .rgt .ad a {
+          display: block; }
+        .banner .wrap .rgt .ad p:nth-of-type(1) {
+          margin-top: 19px;
+          font-size: 15px;
+          color: #333;
+          height: 27px;
+          line-height: 27px; }
+        .banner .wrap .rgt .ad p:nth-of-type(2) {
+          height: 24px;
+          line-height: 24px;
+          font-size: 12px;
+          color: #666; }
+    .banner .wrap .bannershow {
+      position: absolute;
+      left: 257px;
+      height: 440px;
+      width: 757px; }
+      .banner .wrap .bannershow > a {
+        display: none; }
+      .banner .wrap .bannershow img {
+        position: absolute; }
+      .banner .wrap .bannershow > a:first-child {
+        display: block; }
+      .banner .wrap .bannershow .pt {
+        position: absolute;
+        bottom: 10px;
+        z-index: 2;
+        text-align: center;
+        width: 100%; }
+        .banner .wrap .bannershow .pt a {
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          background: #e7e7e7;
+          border-radius: 10px;
+          margin-right: 6px; }
+        .banner .wrap .bannershow .pt a:first-child {
+          background-color: #ff0077; }
+
+.xians {
+  height: 184px; }
+  .xians .wrap {
+    margin-top: 10px; }
+    .xians .wrap div {
+      float: left; }
+    .xians .wrap div:nth-of-type(1) {
+      width: 214px;
+      height: 184px;
+      border-right: 1px solid #e5e5e5; }
+      .xians .wrap div:nth-of-type(1) p:nth-of-type(1) {
+        margin-top: 16px;
+        height: 29px;
+        line-height: 29px;
+        font-size: 16px;
+        padding-left: 16px; }
+      .xians .wrap div:nth-of-type(1) p:nth-of-type(2) {
         float: left;
-        margin-right: 19px; }
-        .banner ul li dl dd a {
-          color: #666666;
-          font-size: 11px; }
-          .banner ul li dl dd a.hot {
-            padding-right: 15px;
-            background: url(../img/iconimg/icon8.jpg) no-repeat right -1px; }
-          .banner ul li dl dd a:hover {
-            text-decoration: underline; }
-      .banner ul li dl dd:last-child {
-        margin-right: 0; }
+        height: 22px;
+        line-height: 22px;
+        font-size: 10px;
+        margin-left: 16px;
+        background: #4b4b4b;
+        border-radius: 4px;
+        text-align: center;
+        padding: 0 6px;
+        color: #fff; }
+      .xians .wrap div:nth-of-type(1) a {
+        display: block;
+        margin: 33px 0 0 70px; }
+    .xians .wrap div:nth-of-type(2) {
+      width: 254px;
+      height: 184px; }
+      .xians .wrap div:nth-of-type(2) div:nth-of-type(1) {
+        height: 91px;
+        border-bottom: 1px solid #e5e5e5; }
+        .xians .wrap div:nth-of-type(2) div:nth-of-type(1) p:nth-of-type(1) {
+          height: 29px;
+          line-height: 29px;
+          font-size: 17px;
+          padding-left: 18px; }
+        .xians .wrap div:nth-of-type(2) div:nth-of-type(1) p:nth-of-type(2) {
+          height: 22px;
+          line-height: 22px;
+          font-size: 12px;
+          padding-left: 18px;
+          color: #999; }

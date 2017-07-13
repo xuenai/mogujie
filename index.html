@@ -83,8 +83,110 @@
 				<% } %>
 			</script>
 		</ul>
+		<script type="text/html" id="shoplist">
+			<% for(var i=0,len=list.length;i<len;i++) { 
+				var now = list[i];
+			%>
+				<div style="display:none;" class="show">
+					<div class="left fl">
+						<h3><%= now.title %></h3>
+						<p class="title clear"><a class="fl" href="#">当季热卖</a><a style="margin-right:26px;" class="fr" href="#">更多></a></p>
+						<div class="content">
+							<% for(var j=0;j<now.nowhot.length;j++){
+								var hot = ""; 
+								if(now.nowhot[j].hot){ hot = "hot"; }
+							%>
+								<a href="#" class=<%= hot %> ><%= now.nowhot[j].name %></a>	
+							<% } %>
+						</div>
+
+						<p class="title clear"><a class="fl" href="#">流行新品</a><a style="margin-right:26px;" class="fr" href="#">更多></a></p>
+						<div class="content">
+							<% for(var j=0;j<now.newgoods.length;j++){
+								var hot = ""; 
+								if(now.newgoods[j].hot){ hot = "hot"; }
+							%>
+								<a href="#" class=<%= hot %> ><%= now.newgoods[j].name %></a>	
+							<% } %>
+						</div>
+
+						<p class="title clear"><a class="fl" href="#">潮流时尚</a><a style="margin-right:26px;" class="fr" href="#">更多></a></p>
+						<div class="content">
+							<% for(var j=0;j<now.caoliu.length;j++){
+								var hot = ""; 
+								if(now.caoliu[j].hot){ hot = "hot"; }
+							%>
+								<a href="#" class=<%= hot %> ><%= now.caoliu[j].name %></a>	
+							<% } %>
+						</div>
+
+						<p class="title clear"><a class="fl" href="#">品牌推荐</a><a style="margin-right:26px;" class="fr" href="#">更多></a></p>
+						<div class="last">
+							<% for(var k=0;k<now.brand.length;k++){ 
+
+							%>
+								<a href="#"><img src=<%= now.brand[k] %> /></a>
+							<% } %>
+						</div>
+					</div>
+					<div class="right fr">
+						<h3>为你推荐</h3>
+						<p>根据您的购买浏览记录推荐</p>
+					</div>
+				</div>
+			<% } %>
+		</script>
+		<div class="rgt fr">
+			<div class="personCenter">
+				<a class="tou" href="#"></a>
+				<p><span>菇凉好! </span><span> 欢迎来逛蘑菇街~</span></p>
+				<div><a href="#">会员中心</a></div>
+			</div>
+			<div class="ad">
+				<a href="#">
+					<p>必败夏日泳装</p>
+					<p>三件套抵制999元</p>
+					<img src="img/brand/brand6.webp">
+				</a>
+			</div>
+		</div>
+		<div class="bannershow"></div>
 	</div>
 </div>
+
+<div class="xians">
+	<div class="wrap">
+		<div>
+			<p>限时快抢</p>
+			<p class="time"></p>
+			<a href="#"><img src="img/xsqg/xsqg1.jpg"></a>
+		</div>
+		<div>
+			<div>
+				<p>一元抢好货</p>
+				<p>整点拼手速</p>
+				<a href="#"><img src="img/xsqg/xsqg2.jpg"></a>
+			</div>
+		</div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</div>
+<script type="text/html" id="bantuijian">
+					<% for(var i=0,len=list.length;i<len;i++){
+						var now = list[i],floa="fl";
+						if(i % 2 != 0){floa = "fr"};
+					 %>
+						<a class= <%= floa %> href="#">
+							<div class="top">
+								<img src= <%= now.src %> />
+								<div><nobr> <%= now.title %> </nobr></div>
+							</div>
+							<div class="price"><%= now.price %></div>
+						</a>
+					<% } %>
+				</script>
 <script type="text/javascript" src="lib/requirejs/require.js" data-main="js/index"></script>
 </body>
 </html>

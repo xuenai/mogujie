@@ -2,7 +2,7 @@
 	{
 		"title":"上衣",
 		"titleCon":[
-			{"name":"时尚套装","hot":true},{"name":"T恤","hot":false},{"name":"雪纺衫","hot":false}
+			{"name":"时尚套装","hot":false},{"name":"T恤","hot":false},{"name":"雪纺衫","hot":false}
 		],
 		"nowhot":[
 			{"name":"精致套装","hot":false},{"name":"T恤","hot":false},{"name":"雪纺衫","hot":true},
@@ -19,16 +19,16 @@
 			{"name":"俏皮露肩","hot":true},{"name":"绑带衬衫","hot":false},{"name":"条纹款","hot":false}
 			,{"name":"白衬衫","hot":true},{"name":"防晒背心","hot":false}
 		],
-		"brand":["http://s16.mogucdn.com/p2/161228/upload_67gg5bb4ha88d2k032bl09173jkgi_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5ll1l317972l963a3lhi2334akcje_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s18.mogucdn.com/p2/161228/upload_238g3c3kck4396gbclb32j0kgg3lh_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5iaf9241k9ci5eacg60j3e0ki4113_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_73c36k73jf91k9b67ed83g7jlbl5a_54x54.jpg_200x9999.v1c7E.70.webp"]
+		"brand":["img/brand/brand1.webp",
+			"img/brand/brand2.webp",
+			"img/brand/brand3.webp",
+			"img/brand/brand4.webp",
+			"img/brand/brand5.webp"]
 	},
 	{
 		"title":"裙子",
 		"titleCon":[
-			{"name":"连衣裙","hot":true},{"name":"半身裙","hot":false},{"name":"雪纺衫","hot":false}
+			{"name":"连衣裙","hot":false},{"name":"半身裙","hot":false},{"name":"雪纺衫","hot":false}
 		],
 		"nowhot":[
 			{"name":"精致套装","hot":false},{"name":"T恤","hot":false},{"name":"雪纺衫","hot":true},
@@ -45,11 +45,11 @@
 			{"name":"俏皮露肩","hot":true},{"name":"绑带衬衫","hot":false},{"name":"条纹款","hot":false}
 			,{"name":"白衬衫","hot":true},{"name":"防晒背心","hot":false}
 		],
-		"brand":["http://s16.mogucdn.com/p2/161228/upload_67gg5bb4ha88d2k032bl09173jkgi_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5ll1l317972l963a3lhi2334akcje_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s18.mogucdn.com/p2/161228/upload_238g3c3kck4396gbclb32j0kgg3lh_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5iaf9241k9ci5eacg60j3e0ki4113_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_73c36k73jf91k9b67ed83g7jlbl5a_54x54.jpg_200x9999.v1c7E.70.webp"]
+		"brand":["img/brand/brand1.webp",
+			"img/brand/brand2.webp",
+			"img/brand/brand3.webp",
+			"img/brand/brand4.webp",
+			"img/brand/brand5.webp"]
 	},
 	{
 		"title":"裤子",
@@ -71,11 +71,11 @@
 			{"name":"俏皮露肩","hot":true},{"name":"绑带衬衫","hot":false},{"name":"条纹款","hot":false}
 			,{"name":"白衬衫","hot":true},{"name":"防晒背心","hot":false}
 		],
-		"brand":["http://s16.mogucdn.com/p2/161228/upload_67gg5bb4ha88d2k032bl09173jkgi_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5ll1l317972l963a3lhi2334akcje_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s18.mogucdn.com/p2/161228/upload_238g3c3kck4396gbclb32j0kgg3lh_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5iaf9241k9ci5eacg60j3e0ki4113_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_73c36k73jf91k9b67ed83g7jlbl5a_54x54.jpg_200x9999.v1c7E.70.webp"]
+		"brand":["img/brand/brand1.webp",
+			"img/brand/brand2.webp",
+			"img/brand/brand3.webp",
+			"img/brand/brand4.webp",
+			"img/brand/brand5.webp"]
 	},
 	{
 		"title":"女鞋",
@@ -97,16 +97,16 @@
 			{"name":"俏皮露肩","hot":true},{"name":"绑带衬衫","hot":false},{"name":"条纹款","hot":false}
 			,{"name":"白衬衫","hot":true},{"name":"防晒背心","hot":false}
 		],
-		"brand":["http://s16.mogucdn.com/p2/161228/upload_67gg5bb4ha88d2k032bl09173jkgi_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5ll1l317972l963a3lhi2334akcje_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s18.mogucdn.com/p2/161228/upload_238g3c3kck4396gbclb32j0kgg3lh_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5iaf9241k9ci5eacg60j3e0ki4113_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_73c36k73jf91k9b67ed83g7jlbl5a_54x54.jpg_200x9999.v1c7E.70.webp"]
+		"brand":["img/brand/brand1.webp",
+			"img/brand/brand2.webp",
+			"img/brand/brand3.webp",
+			"img/brand/brand4.webp",
+			"img/brand/brand5.webp"]
 	},
 	{
 		"title":"男友",
 		"titleCon":[
-			{"name":"草薙","hot":true},{"name":"休闲裤","hot":false},{"name":"雪纺衫","hot":false}
+			{"name":"草薙","hot":false},{"name":"休闲裤","hot":false},{"name":"雪纺衫","hot":false}
 		],
 		"nowhot":[
 			{"name":"精致套装","hot":false},{"name":"T恤","hot":false},{"name":"雪纺衫","hot":true},
@@ -123,11 +123,11 @@
 			{"name":"俏皮露肩","hot":true},{"name":"绑带衬衫","hot":false},{"name":"条纹款","hot":false}
 			,{"name":"白衬衫","hot":true},{"name":"防晒背心","hot":false}
 		],
-		"brand":["http://s16.mogucdn.com/p2/161228/upload_67gg5bb4ha88d2k032bl09173jkgi_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5ll1l317972l963a3lhi2334akcje_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s18.mogucdn.com/p2/161228/upload_238g3c3kck4396gbclb32j0kgg3lh_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5iaf9241k9ci5eacg60j3e0ki4113_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_73c36k73jf91k9b67ed83g7jlbl5a_54x54.jpg_200x9999.v1c7E.70.webp"]
+		"brand":["img/brand/brand1.webp",
+			"img/brand/brand2.webp",
+			"img/brand/brand3.webp",
+			"img/brand/brand4.webp",
+			"img/brand/brand5.webp"]
 	},
 	{
 		"title":"内衣",
@@ -149,16 +149,16 @@
 			{"name":"俏皮露肩","hot":true},{"name":"绑带衬衫","hot":false},{"name":"条纹款","hot":false}
 			,{"name":"白衬衫","hot":true},{"name":"防晒背心","hot":false}
 		],
-		"brand":["http://s16.mogucdn.com/p2/161228/upload_67gg5bb4ha88d2k032bl09173jkgi_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5ll1l317972l963a3lhi2334akcje_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s18.mogucdn.com/p2/161228/upload_238g3c3kck4396gbclb32j0kgg3lh_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5iaf9241k9ci5eacg60j3e0ki4113_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_73c36k73jf91k9b67ed83g7jlbl5a_54x54.jpg_200x9999.v1c7E.70.webp"]
+		"brand":["img/brand/brand1.webp",
+			"img/brand/brand2.webp",
+			"img/brand/brand3.webp",
+			"img/brand/brand4.webp",
+			"img/brand/brand5.webp"]
 	},
 	{
 		"title":"宝宝",
 		"titleCon":[
-			{"name":"斜挎包","hot":true},{"name":"拉杆包","hot":false},{"name":"双肩包","hot":false}
+			{"name":"斜挎包","hot":false},{"name":"拉杆包","hot":false},{"name":"双肩包","hot":false}
 		],
 		"nowhot":[
 			{"name":"精致套装","hot":false},{"name":"T恤","hot":false},{"name":"雪纺衫","hot":true},
@@ -175,11 +175,11 @@
 			{"name":"俏皮露肩","hot":true},{"name":"绑带衬衫","hot":false},{"name":"条纹款","hot":false}
 			,{"name":"白衬衫","hot":true},{"name":"防晒背心","hot":false}
 		],
-		"brand":["http://s16.mogucdn.com/p2/161228/upload_67gg5bb4ha88d2k032bl09173jkgi_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5ll1l317972l963a3lhi2334akcje_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s18.mogucdn.com/p2/161228/upload_238g3c3kck4396gbclb32j0kgg3lh_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5iaf9241k9ci5eacg60j3e0ki4113_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_73c36k73jf91k9b67ed83g7jlbl5a_54x54.jpg_200x9999.v1c7E.70.webp"]
+		"brand":["img/brand/brand1.webp",
+			"img/brand/brand2.webp",
+			"img/brand/brand3.webp",
+			"img/brand/brand4.webp",
+			"img/brand/brand5.webp"]
 	},
 	{
 		"title":"运动",
@@ -201,16 +201,16 @@
 			{"name":"俏皮露肩","hot":true},{"name":"绑带衬衫","hot":false},{"name":"条纹款","hot":false}
 			,{"name":"白衬衫","hot":true},{"name":"防晒背心","hot":false}
 		],
-		"brand":["http://s16.mogucdn.com/p2/161228/upload_67gg5bb4ha88d2k032bl09173jkgi_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5ll1l317972l963a3lhi2334akcje_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s18.mogucdn.com/p2/161228/upload_238g3c3kck4396gbclb32j0kgg3lh_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5iaf9241k9ci5eacg60j3e0ki4113_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_73c36k73jf91k9b67ed83g7jlbl5a_54x54.jpg_200x9999.v1c7E.70.webp"]
+		"brand":["img/brand/brand1.webp",
+			"img/brand/brand2.webp",
+			"img/brand/brand3.webp",
+			"img/brand/brand4.webp",
+			"img/brand/brand5.webp"]
 	},
 	{
 		"title":"美妆",
 		"titleCon":[
-			{"name":"面膜","hot":true},{"name":"个人护理","hot":false},{"name":"夏日防嗮","hot":false}
+			{"name":"面膜","hot":false},{"name":"个人护理","hot":false},{"name":"夏日防嗮","hot":false}
 		],
 		"nowhot":[
 			{"name":"精致套装","hot":false},{"name":"T恤","hot":false},{"name":"雪纺衫","hot":true},
@@ -227,11 +227,11 @@
 			{"name":"俏皮露肩","hot":true},{"name":"绑带衬衫","hot":false},{"name":"条纹款","hot":false}
 			,{"name":"白衬衫","hot":true},{"name":"防晒背心","hot":false}
 		],
-		"brand":["http://s16.mogucdn.com/p2/161228/upload_67gg5bb4ha88d2k032bl09173jkgi_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5ll1l317972l963a3lhi2334akcje_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s18.mogucdn.com/p2/161228/upload_238g3c3kck4396gbclb32j0kgg3lh_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5iaf9241k9ci5eacg60j3e0ki4113_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_73c36k73jf91k9b67ed83g7jlbl5a_54x54.jpg_200x9999.v1c7E.70.webp"]
+		"brand":["img/brand/brand1.webp",
+			"img/brand/brand2.webp",
+			"img/brand/brand3.webp",
+			"img/brand/brand4.webp",
+			"img/brand/brand5.webp"]
 	},
 	{
 		"title":"配饰",
@@ -253,11 +253,11 @@
 			{"name":"俏皮露肩","hot":true},{"name":"绑带衬衫","hot":false},{"name":"条纹款","hot":false}
 			,{"name":"白衬衫","hot":true},{"name":"防晒背心","hot":false}
 		],
-		"brand":["http://s16.mogucdn.com/p2/161228/upload_67gg5bb4ha88d2k032bl09173jkgi_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5ll1l317972l963a3lhi2334akcje_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s18.mogucdn.com/p2/161228/upload_238g3c3kck4396gbclb32j0kgg3lh_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5iaf9241k9ci5eacg60j3e0ki4113_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_73c36k73jf91k9b67ed83g7jlbl5a_54x54.jpg_200x9999.v1c7E.70.webp"]
+		"brand":["img/brand/brand1.webp",
+			"img/brand/brand2.webp",
+			"img/brand/brand3.webp",
+			"img/brand/brand4.webp",
+			"img/brand/brand5.webp"]
 	},
 	{
 		"title":"家具",
@@ -279,16 +279,16 @@
 			{"name":"俏皮露肩","hot":true},{"name":"绑带衬衫","hot":false},{"name":"条纹款","hot":false}
 			,{"name":"白衬衫","hot":true},{"name":"防晒背心","hot":false}
 		],
-		"brand":["http://s16.mogucdn.com/p2/161228/upload_67gg5bb4ha88d2k032bl09173jkgi_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5ll1l317972l963a3lhi2334akcje_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s18.mogucdn.com/p2/161228/upload_238g3c3kck4396gbclb32j0kgg3lh_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5iaf9241k9ci5eacg60j3e0ki4113_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_73c36k73jf91k9b67ed83g7jlbl5a_54x54.jpg_200x9999.v1c7E.70.webp"]
+		"brand":["img/brand/brand1.webp",
+			"img/brand/brand2.webp",
+			"img/brand/brand3.webp",
+			"img/brand/brand4.webp",
+			"img/brand/brand5.webp"]
 	},
 	{
 		"title":"母婴",
 		"titleCon":[
-			{"name":"夏新屏","hot":true},{"name":"童装","hot":false},{"name":"孕妇装","hot":false}
+			{"name":"夏新屏","hot":false},{"name":"童装","hot":false},{"name":"孕妇装","hot":false}
 		],
 		"nowhot":[
 			{"name":"精致套装","hot":false},{"name":"T恤","hot":false},{"name":"雪纺衫","hot":true},
@@ -305,11 +305,11 @@
 			{"name":"俏皮露肩","hot":true},{"name":"绑带衬衫","hot":false},{"name":"条纹款","hot":false}
 			,{"name":"白衬衫","hot":true},{"name":"防晒背心","hot":false}
 		],
-		"brand":["http://s16.mogucdn.com/p2/161228/upload_67gg5bb4ha88d2k032bl09173jkgi_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5ll1l317972l963a3lhi2334akcje_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s18.mogucdn.com/p2/161228/upload_238g3c3kck4396gbclb32j0kgg3lh_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5iaf9241k9ci5eacg60j3e0ki4113_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_73c36k73jf91k9b67ed83g7jlbl5a_54x54.jpg_200x9999.v1c7E.70.webp"]
+		"brand":["img/brand/brand1.webp",
+			"img/brand/brand2.webp",
+			"img/brand/brand3.webp",
+			"img/brand/brand4.webp",
+			"img/brand/brand5.webp"]
 	},
 	{
 		"title":"食品",
@@ -331,11 +331,11 @@
 			{"name":"俏皮露肩","hot":true},{"name":"绑带衬衫","hot":false},{"name":"条纹款","hot":false}
 			,{"name":"白衬衫","hot":true},{"name":"防晒背心","hot":false}
 		],
-		"brand":["http://s16.mogucdn.com/p2/161228/upload_67gg5bb4ha88d2k032bl09173jkgi_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5ll1l317972l963a3lhi2334akcje_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s18.mogucdn.com/p2/161228/upload_238g3c3kck4396gbclb32j0kgg3lh_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5iaf9241k9ci5eacg60j3e0ki4113_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_73c36k73jf91k9b67ed83g7jlbl5a_54x54.jpg_200x9999.v1c7E.70.webp"]
+		"brand":["img/brand/brand1.webp",
+			"img/brand/brand2.webp",
+			"img/brand/brand3.webp",
+			"img/brand/brand4.webp",
+			"img/brand/brand5.webp"]
 	},
 	{
 		"title":"电器",
@@ -357,10 +357,10 @@
 			{"name":"俏皮露肩","hot":true},{"name":"绑带衬衫","hot":false},{"name":"条纹款","hot":false}
 			,{"name":"白衬衫","hot":true},{"name":"防晒背心","hot":false}
 		],
-		"brand":["http://s16.mogucdn.com/p2/161228/upload_67gg5bb4ha88d2k032bl09173jkgi_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5ll1l317972l963a3lhi2334akcje_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s18.mogucdn.com/p2/161228/upload_238g3c3kck4396gbclb32j0kgg3lh_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_5iaf9241k9ci5eacg60j3e0ki4113_54x54.jpg_200x9999.v1c7E.70.webp",
-			"http://s16.mogucdn.com/p2/161228/upload_73c36k73jf91k9b67ed83g7jlbl5a_54x54.jpg_200x9999.v1c7E.70.webp"]
+		"brand":["img/brand/brand1.webp",
+			"img/brand/brand2.webp",
+			"img/brand/brand3.webp",
+			"img/brand/brand4.webp",
+			"img/brand/brand5.webp"]
 	}
 ]
