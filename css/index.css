@@ -500,3 +500,26 @@
         background-color: rgba(0, 0, 0, 0.5);
         font-size: 16px;
         color: #fff; }
+  .hotmen .con .right {
+    float: right;
+    width: 240px; }
+    .hotmen .con .right a {
+      width: 114px;
+      height: 114px;
+      float: left;
+      position: relative;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 11px;
+      overflow: hidden; }
+      .hotmen .con .right a img {
+        width: 114px; }
+      .hotmen .con .right a span {
+        position: absolute;
+        top: 89px;
+        left: 28px;
+        color: #eee; }
+      .hotmen .con .right a:hover {
+        opacity: 0.8; }
+    .hotmen .con .right a:nth-of-type(2n) {
+      float: right; }

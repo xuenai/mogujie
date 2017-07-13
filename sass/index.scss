@@ -630,6 +630,35 @@
 					color: #fff;
 				}
 			}
+		};
+		.right{
+			float: right;
+			width: 240px;
+			a{
+				width: 114px;
+				height: 114px;
+				float: left;
+				position: relative;
+				text-align: center;
+				border-radius: 8px;
+				margin-bottom: 11px;
+				overflow: hidden;
+				img{
+					width: 114px;
+				}
+				span{
+					position: absolute;
+					top: 89px;
+					left: 28px;
+					color: #eee;
+				};
+				&:hover{
+					opacity: 0.8;
+				};
+			};
+			a:nth-of-type(2n){
+				float: right;
+			}
 		}
 	}
 }

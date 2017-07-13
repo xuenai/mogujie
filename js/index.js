@@ -55,7 +55,6 @@ require(['config'],function(){
 
 		//主题市场展示
 		$.getJSON('/data/theameMark.json',function(data){
-			console.log(data);
 			var shoplist={
 					list:data
 				};
@@ -140,23 +139,24 @@ require(['config'],function(){
 				$ps.eq(index).text(data[index].title);
 				arrIn.push(data[index]);
 			});
-			console.log(data);
-			// timer = setInterval(function(){
-			// 	var index = Math.floor(Math.random()*arrOut.length);
-			// 	while($.inArray(arrOut[index],arrIn) != -1){
-			// 		index = Math.floor(Math.random()*arrOut.length);
-			// 	}
-			// 	for(var i=0;i<arrIn.length;i++){
-			// 		if(arrIn[i].title==$ps.eq(index).text()){
-			// 			arrIn.splice(i,1);
-			// 		}
-			// 	}
-			// 	$imgs.eq(index).attr({"src":arrOut[index].url});
-			// 	$ps.eq(index).text(arrOut[index].title);
-			// 	arrIn.push(arrOut[index]);
+			console.log(arrIn[0].title=="穿起最可爱")
+			timer = setInterval(function(){
+				var index = Math.floor(Math.random()*arrOut.length);
+				while($.inArray(arrOut[index],arrIn) != -1){
+					index = Math.floor(Math.random()*arrOut.length);
+				}
+				console.log(index)
+				// for(var i=0;i<arrIn.length;i++){
+				// 	if(arrIn[i].title==$ps.eq(index).text()){
+				// 		arrIn.splice(i,1);
+				// 	}
+				// }
+				// $imgs.eq(index).attr({"src":arrOut[index].url});
+				// $ps.eq(index).text(arrOut[index].title);
+				// arrIn.push(arrOut[index]);
 			
-			// 	console.log(arrIn,arrOut)
-			// },2000);
+				// console.log(arrIn,arrOut)
+			},2000);
 		})
 	});
 });
