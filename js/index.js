@@ -133,30 +133,35 @@ require(['config'],function(){
 		$.getJSON('/data/hotmen.json',function(data){
 			var arrOut=data,arrIn=[],timer=null,
 			    $imgs = $('.hotmen .con .left').find('img'),
-			    $ps = $('.hotmen .con .left').find('p');
+			    $ps = $('.hotmen .con .left').find('p'),index2pre = -1;
 			$imgs.each(function(index,elem){
 				$(elem).attr({"src":data[index].url});
 				$ps.eq(index).text(data[index].title);
 				arrIn.push(data[index]);
 			});
-			console.log(arrIn[0].title=="穿起最可爱")
 			timer = setInterval(function(){
-				var index = Math.floor(Math.random()*arrOut.length);
+				var index = Math.floor(Math.random()*arrOut.length),index2 = Math.floor(Math.random()*arrIn.length),
+			   		$imgs = $('.hotmen .con .left').find('img'),$ps = $('.hotmen .con .left').find('p');
 				while($.inArray(arrOut[index],arrIn) != -1){
 					index = Math.floor(Math.random()*arrOut.length);
+				};
+				while(index2pre == index2){
+					index2 = Math.floor(Math.random()*arrIn.length);
+				};
+				// console.log($ps.eq(index2).text())//之前获取到的$ps在这里已经变化了，不能在使用，要从新再次获取
+				for(var i=0,len=arrIn.length;i<len;i++){
+					if(arrIn[i].title==$ps.eq(index2).text()){
+						arrIn.splice(i,1);
+						break;
+					}
 				}
-				console.log(index)
-				// for(var i=0;i<arrIn.length;i++){
-				// 	if(arrIn[i].title==$ps.eq(index).text()){
-				// 		arrIn.splice(i,1);
-				// 	}
-				// }
-				// $imgs.eq(index).attr({"src":arrOut[index].url});
-				// $ps.eq(index).text(arrOut[index].title);
-				// arrIn.push(arrOut[index]);
-			
-				// console.log(arrIn,arrOut)
-			},2000);
+				$('.hotmen .con .left').children('a').eq(index2).css({transform:"rotateY(-180deg)"});
+				console.log($('.hotmen .con .left').children('a').eq(index2).css('transform'))
+				$imgs.eq(index2).attr({"src":arrOut[index].url});
+				$ps.eq(index2).text(arrOut[index].title);
+				arrIn.push(arrOut[index]);
+				index2pre = index2;
+			},4000);
 		})
 	});
 });

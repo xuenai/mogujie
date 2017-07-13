@@ -482,6 +482,7 @@
   .hotmen .con .left {
     width: 960px; }
     .hotmen .con .left a {
+      transition: all 1s;
       float: left;
       margin-right: 10px;
       position: relative; }
