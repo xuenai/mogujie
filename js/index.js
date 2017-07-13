@@ -129,6 +129,34 @@ require(['config'],function(){
 					clearInterval(timer2);
 				}
 			},1000);
-		}
+		};
+
+		$.getJSON('/data/hotmen.json',function(data){
+			var arrOut=data,arrIn=[],timer=null,
+			    $imgs = $('.hotmen .con .left').find('img'),
+			    $ps = $('.hotmen .con .left').find('p');
+			$imgs.each(function(index,elem){
+				$(elem).attr({"src":data[index].url});
+				$ps.eq(index).text(data[index].title);
+				arrIn.push(data[index]);
+			});
+			console.log(data);
+			// timer = setInterval(function(){
+			// 	var index = Math.floor(Math.random()*arrOut.length);
+			// 	while($.inArray(arrOut[index],arrIn) != -1){
+			// 		index = Math.floor(Math.random()*arrOut.length);
+			// 	}
+			// 	for(var i=0;i<arrIn.length;i++){
+			// 		if(arrIn[i].title==$ps.eq(index).text()){
+			// 			arrIn.splice(i,1);
+			// 		}
+			// 	}
+			// 	$imgs.eq(index).attr({"src":arrOut[index].url});
+			// 	$ps.eq(index).text(arrOut[index].title);
+			// 	arrIn.push(arrOut[index]);
+			
+			// 	console.log(arrIn,arrOut)
+			// },2000);
+		})
 	});
 });

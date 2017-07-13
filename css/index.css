@@ -1,4 +1,4 @@
-.w1200, .search .wrap, .bantitle .wrap, .banner .wrap, .xians .wrap {
+.w1200, .search .wrap, .bantitle .wrap, .banner .wrap, .xians .wrap, .hotmen {
   width: 1200px;
   margin: 0 auto; }
 
@@ -401,19 +401,19 @@
   height: 184px; }
   .xians .wrap {
     margin-top: 10px; }
-    .xians .wrap div {
+    .xians .wrap > div {
       float: left; }
-    .xians .wrap div:nth-of-type(1) {
+    .xians .wrap > div:nth-of-type(1), .xians .wrap > div:nth-of-type(3), .xians .wrap > div:nth-of-type(5) {
       width: 214px;
       height: 184px;
       border-right: 1px solid #e5e5e5; }
-      .xians .wrap div:nth-of-type(1) p:nth-of-type(1) {
+      .xians .wrap > div:nth-of-type(1) p:nth-of-type(1), .xians .wrap > div:nth-of-type(3) p:nth-of-type(1), .xians .wrap > div:nth-of-type(5) p:nth-of-type(1) {
         margin-top: 16px;
         height: 29px;
         line-height: 29px;
         font-size: 16px;
         padding-left: 16px; }
-      .xians .wrap div:nth-of-type(1) p:nth-of-type(2) {
+      .xians .wrap > div:nth-of-type(1) p:nth-of-type(2), .xians .wrap > div:nth-of-type(3) p:nth-of-type(2), .xians .wrap > div:nth-of-type(5) p:nth-of-type(2) {
         float: left;
         height: 22px;
         line-height: 22px;
@@ -424,23 +424,79 @@
         text-align: center;
         padding: 0 6px;
         color: #fff; }
-      .xians .wrap div:nth-of-type(1) a {
+      .xians .wrap > div:nth-of-type(1) a, .xians .wrap > div:nth-of-type(3) a, .xians .wrap > div:nth-of-type(5) a {
         display: block;
         margin: 33px 0 0 70px; }
-    .xians .wrap div:nth-of-type(2) {
+    .xians .wrap > div:nth-of-type(2), .xians .wrap > div:nth-of-type(4) {
       width: 254px;
       height: 184px; }
-      .xians .wrap div:nth-of-type(2) div:nth-of-type(1) {
+      .xians .wrap > div:nth-of-type(2) div, .xians .wrap > div:nth-of-type(4) div {
         height: 91px;
-        border-bottom: 1px solid #e5e5e5; }
-        .xians .wrap div:nth-of-type(2) div:nth-of-type(1) p:nth-of-type(1) {
+        border-bottom: 1px solid #e5e5e5;
+        position: relative; }
+        .xians .wrap > div:nth-of-type(2) div p:nth-of-type(1), .xians .wrap > div:nth-of-type(4) div p:nth-of-type(1) {
+          padding-top: 16px;
           height: 29px;
           line-height: 29px;
           font-size: 17px;
-          padding-left: 18px; }
-        .xians .wrap div:nth-of-type(2) div:nth-of-type(1) p:nth-of-type(2) {
+          padding-left: 18px;
+          border-right: none; }
+        .xians .wrap > div:nth-of-type(2) div p:nth-of-type(2), .xians .wrap > div:nth-of-type(4) div p:nth-of-type(2) {
           height: 22px;
           line-height: 22px;
           font-size: 12px;
           padding-left: 18px;
           color: #999; }
+        .xians .wrap > div:nth-of-type(2) div a, .xians .wrap > div:nth-of-type(4) div a {
+          position: absolute;
+          top: 8px;
+          right: 28px; }
+      .xians .wrap > div:nth-of-type(2) div:nth-of-type(2), .xians .wrap > div:nth-of-type(4) div:nth-of-type(2) {
+        border-bottom: none; }
+        .xians .wrap > div:nth-of-type(2) div:nth-of-type(2) a, .xians .wrap > div:nth-of-type(4) div:nth-of-type(2) a {
+          position: absolute;
+          top: 8px;
+          right: 20px; }
+    .xians .wrap > div:nth-of-type(3) {
+      margin-left: 11px; }
+
+.hotmen {
+  margin-top: 27px; }
+  .hotmen .title {
+    height: 50px;
+    line-height: 50px; }
+    .hotmen .title a:nth-of-type(1) {
+      height: 22px;
+      line-height: 22px;
+      margin-top: 14px;
+      font-size: 22px;
+      color: black;
+      font-weight: bold;
+      float: left;
+      border-left: 7px solid #ff484d;
+      padding-left: 9px; }
+    .hotmen .title a:nth-of-type(2) {
+      float: right;
+      font-size: 11px;
+      color: #666; }
+  .hotmen .con .left {
+    width: 960px; }
+    .hotmen .con .left a {
+      float: left;
+      margin-right: 10px;
+      position: relative; }
+      .hotmen .con .left a img {
+        width: 182px;
+        height: 364px; }
+      .hotmen .con .left a p {
+        position: absolute;
+        bottom: 5px;
+        margin: 0 auto;
+        padding: 0 12px;
+        border-radius: 19px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 16px;
+        color: #fff; }
