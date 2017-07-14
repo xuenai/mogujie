@@ -1,4 +1,4 @@
-.w1200, .search .wrap, .bantitle .wrap, .banner .wrap, .xians .wrap, .hotmen {
+.w1200, .search .wrap, .bantitle .wrap, .banner .wrap, .xians .wrap, .hotmen, .jxzt, .lou {
   width: 1200px;
   margin: 0 auto; }
 
@@ -461,7 +461,8 @@
       margin-left: 11px; }
 
 .hotmen {
-  margin-top: 27px; }
+  margin-top: 27px;
+  height: 415px; }
   .hotmen .title {
     height: 50px;
     line-height: 50px; }
@@ -524,3 +525,108 @@
         opacity: 0.8; }
     .hotmen .con .right a:nth-of-type(2n) {
       float: right; }
+
+.jxzt {
+  height: 314px; }
+  .jxzt .title {
+    margin-top: 26px;
+    height: 54px;
+    width: 950px; }
+    .jxzt .title a {
+      font-size: 20px;
+      color: #000;
+      font-weight: bold;
+      float: left;
+      border-left: 7px solid #ff8ba9;
+      margin-top: 16px;
+      padding-left: 10px; }
+    .jxzt .title p {
+      float: right; }
+      .jxzt .title p span {
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        border-radius: 13px;
+        color: #fff;
+        text-align: center;
+        background-color: #ccc;
+        margin-top: 16px;
+        margin-right: 6px;
+        line-height: 26px;
+        cursor: default; }
+      .jxzt .title p span.active {
+        background-color: #333; }
+  .jxzt .show .lun {
+    width: 950px;
+    float: left;
+    position: relative;
+    height: 260px;
+    overflow: hidden; }
+    .jxzt .show .lun #prev, .jxzt .show .lun #next {
+      width: 30px;
+      height: 60px;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.7);
+      top: 99px;
+      text-align: center;
+      line-height: 60px;
+      color: #fff;
+      z-index: 20;
+      font-size: 15px;
+      display: none; }
+    .jxzt .show .lun #prev {
+      border-radius: 0 6px 6px 0;
+      left: 0; }
+    .jxzt .show .lun #next {
+      border-radius: 6px 0 0 6px;
+      right: 0px; }
+    .jxzt .show .lun .lungo {
+      position: absolute;
+      left: 0;
+      top: 0; }
+      .jxzt .show .lun .lungo > div {
+        float: left;
+        width: 310px;
+        margin-right: 10px; }
+        .jxzt .show .lun .lungo > div > a {
+          margin-bottom: 14px;
+          display: block; }
+        .jxzt .show .lun .lungo > div div {
+          padding-left: 14px; }
+          .jxzt .show .lun .lungo > div div a {
+            margin-right: 10px;
+            display: inline-block;
+            height: 91px;
+            width: 60px;
+            text-align: center;
+            color: #333; }
+            .jxzt .show .lun .lungo > div div a span {
+              line-height: 31px; }
+  .jxzt .show .lxys {
+    float: right;
+    width: 240px; }
+    .jxzt .show .lxys h3 {
+      height: 60px;
+      line-height: 60px;
+      font-size: 15px;
+      text-indent: 4px;
+      font-weight: normal; }
+    .jxzt .show .lxys a {
+      float: left;
+      width: 60px;
+      height: 95px;
+      text-overflow: ellipsis;
+      margin-right: 15px;
+      color: #666;
+      overflow: hidden;
+      transition: 0.3s; }
+      .jxzt .show .lxys a:hover {
+        opacity: 0.7; }
+      .jxzt .show .lxys a span {
+        line-height: 21px; }
+
+.lou {
+  margin-top: 25px; }
+  .lou .title {
+    height: 53px;
+    line-height: 53px; }
