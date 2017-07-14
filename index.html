@@ -362,15 +362,102 @@
 	</div>
 </div>	
 
+<div id="lou"></div>
+<script type="text/html" id="loutemp">
+<% for(var i=0,len=list.length;i<len;i++) { 
+	var now = list[i],
+		title = now.title,
+		left = now.left,
+		center = now.center,
+		right = now.right[0];
+%>
 
 <div class="pptm lou">
 	<div class="title">
-		<a href="#">品牌特卖</a><span>热门搜索：</span>
-		<a href="#">植美村</a><span>|</span><a href="#">自然堂</a><span>|</span>
-		<a href="#">植美村</a><span>|</span><a href="#">自然堂</a><span>|</span>
-		<a href="#">神马</a>
+		<a href="#"><%= title[0] %></a><span>热门搜索：</span>
+		<% for(var j=1;j<title.length;j++){ %>
+			<% if(j==title.length-1){ %>
+				<a href="#"><%= title[j] %></a>
+			<% }else{ %>
+				<a href="#"><%= title[j] %></a><span>|</span>
+			<% } %>	
+		<% } %>
+		<p><a href="#">查看全部＞</a></p>
 	</div>
-</div>	
+	<div class="con">
+		<div class="left" style="background-color:<%= left.bgc %>" >
+			<div class="choice">
+				<% for(var j=0;j<left.top.length;j++){ %>
+					<a href="#"><%= left.top[j] %></a>
+				<% } %>
+			</div>
+			<div class="ad">
+				<a href="#">
+					<h3><%= left.center[0] %></h3>
+					<p><%= left.center[1] %></p>
+					<img src=<%= left.img %> />
+				</a>
+			</div>
+		</div>
+		<div class="center">
+			<% for(var j=0;j<center.length;j++){
+				var now = center[j];
+			 %>
+				<div>
+					<a href="#">
+						<h3><%= now.title %></h3>
+						<p><%= now.des %></p>
+						<img src="<%= now.picurl %>" />
+					</a>
+				</div>
+			<% } %>
+		</div>
+		<% if( right.No==1 ) { %>
+			<!-- 第一类右 -->
+			<div class="right1">
+				<% for(var j=0;j<right.urls.length;j++){ %>
+					<a href="#"><img src=<%= right.urls[j] %> /></a>
+				<% } %>
+			</div>	
+		<% } %>
+
+		<% if( right.No==2 ) { %>
+			<!-- 第二类右 -->
+			<div class="right2">
+				<h3>大家都在买 <a href="#">换一波</a></h3>
+				<a href="#">
+					<img src= <%= right.url[0] %>  />
+					<p class="des"><%= right.des %></p>
+					<p class="price"><span class="now"><%= right.price[0] %></span><span class="old"><%= right.price[1] %></span></p>
+				</a>
+			</div>
+		<% } %>
+		
+		<% if( right.No==3 ) { %>
+			<!-- 第三类右 -->
+			<div class="right3">
+				<h3>大家都在买 <a href="#">换一波</a></h3>
+				<div class="list">
+					<% for(var j=0;j<right.list.length;j++) { 
+						var now5 = right.list[j];
+					%>
+						<a href="#">
+							<img class='fl' src= <%= now5.url %> />
+							<div class="fl">
+								<p><%= now5.des %></p>
+								<p><span><%= now5.price %></span></p>
+							</div>
+						</a>
+					<% } %>
+				</div>
+			</div>
+		<% } %>
+	</div>
+</div>
+
+<% } %>
+</script>
+
 <script type="text/html" id="bantuijian">
 					<% for(var i=0,len=list.length;i<len;i++){
 						var now = list[i],floa="fl";

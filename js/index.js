@@ -242,5 +242,14 @@ require(['config'],function(){
 			}	
 		})();
 		
+
+		//楼层数据
+		$.getJSON('/data/lou.json',function(data){
+			var lou = {
+				list:data
+			};
+			html = template('loutemp',lou);
+			$('#lou').append(html);
+		})
 	});
 });

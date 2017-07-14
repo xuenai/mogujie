@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>用户登录</title>
+	<style type="text/css">
+		*{margin: 0;padding: 0}
+		
+	</style>
+<script type="text/javascript" src="lib/arttemplate/template-native.js"></script>
+</head>
+<body>
+<div id="e"></div>
+<script type="text/html" id="test">
+	<% var dat = list %>
+		<p style="background:<%= dat[1] %>"><%= dat[0] %></p>
+</script>
+<script type="text/javascript">
+	// require(['js/config'],function(){
+	// 	require(['template',"jquery"],function(template,$){
+	// 		var data={
+	// 			list:["a","red"]
+	// 		};
+	// 		var html = template("test",data);
+	// 		$('#e').append(html);
+	// 	})
+	// })	
+	var data={
+				list:["a","red"]
+			};
+			var html = template("test",data);
+			document.getElementById('e').innerHTML=html;
+</script>
+</body>
+</html>

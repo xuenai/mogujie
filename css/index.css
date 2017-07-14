@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .w1200, .search .wrap, .bantitle .wrap, .banner .wrap, .xians .wrap, .hotmen, .jxzt, .lou {
   width: 1200px;
   margin: 0 auto; }
@@ -630,3 +631,174 @@
   .lou .title {
     height: 53px;
     line-height: 53px; }
+    .lou .title > a {
+      color: #444; }
+    .lou .title a:hover {
+      text-decoration: underline; }
+    .lou .title > a:first-child {
+      font-size: 19px;
+      display: inline-block;
+      margin-top: 17px;
+      padding: 0 30px 0 10px;
+      border-left: 8px solid #9f86cf;
+      line-height: 19px; }
+    .lou .title > span {
+      padding: 0 18px;
+      color: #666; }
+    .lou .title p {
+      float: right; }
+      .lou .title p a {
+        color: #777; }
+  .lou .con {
+    height: 360px;
+    /*第一类右*/
+    /*第二类右*/
+    /*第三类右*/ }
+    .lou .con .left {
+      width: 240px;
+      background-color: #ecdaf5;
+      float: left;
+      position: relative; }
+      .lou .con .left .choice {
+        z-index: 5;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        width: 208px;
+        overflow: hidden; }
+        .lou .con .left .choice a {
+          display: block;
+          float: left;
+          margin: 0 10px 10px 0;
+          border: 1px solid #a195a7;
+          width: 57px;
+          height: 27px;
+          text-align: center;
+          line-height: 27px;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.3);
+          transition: 0.4s; }
+        .lou .con .left .choice a:hover {
+          background-color: rgba(0, 0, 0, 0.4); }
+      .lou .con .left .ad > a {
+        display: block;
+        width: 240px;
+        height: 360px;
+        text-align: center;
+        color: #555;
+        position: relative;
+        overflow: hidden; }
+        .lou .con .left .ad > a h3 {
+          font-size: 25px;
+          margin-top: 130px;
+          font-weight: normal; }
+        .lou .con .left .ad > a p {
+          font-size: 14px;
+          line-height: 24px;
+          color: #888; }
+        .lou .con .left .ad > a img {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          transition: 0.4s; }
+        .lou .con .left .ad > a img:hover {
+          transform: translateY(-10px); }
+    .lou .con .center {
+      float: left;
+      width: 717px; }
+      .lou .con .center div {
+        float: left;
+        border-right: 1px solid #f2f2f2;
+        border-bottom: 1px solid #f2f2f2; }
+        .lou .con .center div a {
+          display: block;
+          width: 238px;
+          height: 180px;
+          text-align: center;
+          color: #666;
+          overflow: hidden; }
+          .lou .con .center div a h3 {
+            font-weight: normal;
+            margin-top: 20px; }
+          .lou .con .center div a p {
+            color: #aaa;
+            line-height: 27px; }
+          .lou .con .center div a img {
+            transition: 0.4s; }
+          .lou .con .center div a img:hover {
+            transform: translateY(-5px); }
+      .lou .con .center .nobd {
+        border-bottom: none; }
+    .lou .con .right1 {
+      float: right;
+      width: 243px; }
+      .lou .con .right1 a {
+        margin: 0 0 0 4px;
+        transition: 0.3s; }
+      .lou .con .right1 a:hover {
+        opacity: 0.7; }
+    .lou .con .right2 {
+      float: right;
+      width: 220px;
+      padding-left: 23px; }
+      .lou .con .right2 h3 {
+        height: 55px;
+        line-height: 55px;
+        font-weight: normal;
+        font-size: 16px; }
+        .lou .con .right2 h3 a {
+          color: #888;
+          padding-left: 20px;
+          float: right;
+          background: url(../img/iconimg/icon9.jpg) no-repeat left 22px; }
+      .lou .con .right2 > a {
+        display: block;
+        height: 287px;
+        color: #888; }
+        .lou .con .right2 > a p.des {
+          margin-top: 15px;
+          line-height: 19px;
+          /*font-size: 11px;*/ }
+        .lou .con .right2 > a .price {
+          line-height: 34px; }
+          .lou .con .right2 > a .price span.now {
+            color: red;
+            margin-right: 12px; }
+          .lou .con .right2 > a .price span.old {
+            color: #777;
+            text-decoration: line-through; }
+    .lou .con .right3 {
+      float: right;
+      width: 220px;
+      padding-left: 23px; }
+      .lou .con .right3 h3 {
+        height: 55px;
+        line-height: 55px;
+        font-weight: normal;
+        font-size: 16px; }
+        .lou .con .right3 h3 a {
+          color: #888;
+          padding-left: 20px;
+          float: right;
+          background: url(../img/iconimg/icon9.jpg) no-repeat left 22px; }
+      .lou .con .right3 .list a {
+        height: 66px;
+        display: block;
+        color: #666;
+        margin-bottom: 10px; }
+        .lou .con .right3 .list a img {
+          margin-right: 20px;
+          transition: 0.3s; }
+        .lou .con .right3 .list a img:hover {
+          opacity: 0.7; }
+        .lou .con .right3 .list a div {
+          width: 108px;
+          line-height: 19px; }
+          .lou .con .right3 .list a div p:hover {
+            text-decoration: underline; }
+          .lou .con .right3 .list a div p:last-child {
+            margin-top: 7px; }
+            .lou .con .right3 .list a div p:last-child span {
+              color: red; }
