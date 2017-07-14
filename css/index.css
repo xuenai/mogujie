@@ -404,6 +404,10 @@
     margin-top: 10px; }
     .xians .wrap > div {
       float: left; }
+    .xians .wrap img {
+      transition: 0.3s; }
+    .xians .wrap img:hover {
+      transform: translateX(-5px); }
     .xians .wrap > div:nth-of-type(1), .xians .wrap > div:nth-of-type(3), .xians .wrap > div:nth-of-type(5) {
       width: 214px;
       height: 184px;
@@ -757,10 +761,13 @@
         display: block;
         height: 287px;
         color: #888; }
+        .lou .con .right2 > a img:hover {
+          opacity: 0.7; }
         .lou .con .right2 > a p.des {
           margin-top: 15px;
-          line-height: 19px;
-          /*font-size: 11px;*/ }
+          line-height: 19px; }
+          .lou .con .right2 > a p.des:hover {
+            text-decoration: underline; }
         .lou .con .right2 > a .price {
           line-height: 34px; }
           .lou .con .right2 > a .price span.now {

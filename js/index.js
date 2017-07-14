@@ -159,22 +159,22 @@ require(['config'],function(){
 				};
 				var nowa = $('.hotmen .con .left').children('a').eq(index2)[0];
 				// $('.hotmen .con .left').children('a').eq(index2).css({transform:"rotateY(-180deg)"});
-				// var t = new TimelineMax();
-				// t.to(nowa,1,{
-				// 	rotationY:90,
-				// 	onComplete:function(){
-				// 		$imgs.eq(index2).attr({"src":arrOut[index].url});
-				// 		$ps.eq(index2).text(arrOut[index].title);		
-				// 	}
-				// });
-				// t.to(nowa,1,{
-				// 	rotationY:0
-				// });
-				$imgs.eq(index2).attr({"src":arrOut[index].url});
-				$ps.eq(index2).text(arrOut[index].title);
+				var t = new TimelineMax();
+				t.to(nowa,1,{
+					rotationY:90,
+					onComplete:function(){
+						$imgs.eq(index2).attr({"src":arrOut[index].url});
+						$ps.eq(index2).text(arrOut[index].title);		
+					}
+				});
+				t.to(nowa,1,{
+					rotationY:0
+				});
+				// $imgs.eq(index2).attr({"src":arrOut[index].url});
+				// $ps.eq(index2).text(arrOut[index].title);
 				arrIn.push(arrOut[index]);
 				index2pre = index2;
-			},4000);
+			},3000);
 		});
 
 
