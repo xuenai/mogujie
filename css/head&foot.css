@@ -1,0 +1,144 @@
+.w1200, .footer {
+  width: 1200px;
+  margin: 0 auto; }
+
+.header {
+  height: 31px;
+  background-color: #f2f2f2;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ddd; }
+  .header .wrap {
+    width: 1200px;
+    margin: 0 auto; }
+    .header .wrap > a {
+      background: url(../img/iconimg/icon1.jpg) no-repeat left 9px;
+      height: 31px;
+      line-height: 31px;
+      color: #333;
+      padding-left: 20px; }
+    .header .wrap ul > li {
+      padding: 0 6px;
+      float: left; }
+      .header .wrap ul > li span {
+        padding-left: 9px;
+        color: #ddd; }
+      .header .wrap ul > li a {
+        line-height: 31px;
+        height: 31px;
+        display: inline-block;
+        color: #333; }
+      .header .wrap ul > li .mydd {
+        background: url(../img/iconimg/icon2.jpg) no-repeat left 11px;
+        padding-left: 18px; }
+      .header .wrap ul > li .cart {
+        padding-left: 26px;
+        background: url(../img/iconimg/icon3.jpg) no-repeat left 9px; }
+      .header .wrap ul > li .kf {
+        padding-right: 11px;
+        background: url(../img/iconimg/icon4.jpg) no-repeat right 14px; }
+      .header .wrap ul > li .myshop {
+        padding-left: 23px;
+        padding-right: 11px;
+        background: url(../img/iconimg/icon5.jpg) no-repeat left 7px, url(../img/iconimg/icon4.jpg) no-repeat right 14px; }
+    .header .wrap .cartli {
+      position: relative; }
+      .header .wrap .cartli div {
+        position: absolute;
+        top: 31px;
+        border: 1px solid #ddd;
+        height: 54px;
+        width: 200px;
+        background-color: #eee;
+        border-top: none;
+        border-radius: 0 0 4px 4px;
+        line-height: 54px;
+        text-align: center;
+        left: -96px;
+        display: none; }
+    .header .wrap .kfli, .header .wrap .myshopli {
+      position: relative; }
+      .header .wrap .kfli ol, .header .wrap .myshopli ol {
+        position: absolute;
+        width: 100px;
+        height: 90px;
+        border: 1px solid #ddd;
+        border-top: none;
+        border-radius: 0 0 4px 4px;
+        background-color: #eee;
+        left: -8px;
+        top: 31px;
+        display: none; }
+        .header .wrap .kfli ol li, .header .wrap .myshopli ol li {
+          height: 30px;
+          line-height: 30px;
+          text-align: center; }
+        .header .wrap .kfli ol li.active, .header .wrap .myshopli ol li.active {
+          background: #e4e4e4; }
+    .header .wrap .myshopli ol {
+      height: 120px;
+      width: 90px; }
+
+.footer {
+  margin-top: 40px;
+  margin-bottom: 55px; }
+  .footer .f1 {
+    height: 110px;
+    border-bottom: 2px solid #ff5777; }
+    .footer .f1 div {
+      width: 280px;
+      float: left;
+      padding-left: 20px; }
+      .footer .f1 div h3 {
+        height: 44px;
+        line-height: 44px;
+        padding-left: 25px; }
+      .footer .f1 div ul {
+        width: 245px; }
+        .footer .f1 div ul li {
+          float: left;
+          position: relative;
+          margin-right: 34px;
+          height: 20px;
+          line-height: 20px; }
+          .footer .f1 div ul li a {
+            color: #999; }
+          .footer .f1 div ul li img {
+            position: absolute;
+            top: 20px;
+            left: -20px;
+            display: none; }
+        .footer .f1 div ul li:hover img {
+          display: block; }
+      .footer .f1 div .last li {
+        width: 42px; }
+  .footer .f2 {
+    line-height: 27px;
+    border-bottom: 1px solid #ddd; }
+    .footer .f2 p {
+      margin-top: 4px;
+      margin-bottom: 6px; }
+    .footer .f2 a {
+      color: #777; }
+    .footer .f2 a:hover {
+      color: #ff167d; }
+    .footer .f2 span {
+      padding: 0 9px;
+      color: #b1b1de; }
+  .footer .f3 {
+    font-size: 11px;
+    line-height: 11px; }
+    .footer .f3 p {
+      margin-top: 14px; }
+    .footer .f3 a {
+      color: #666; }
+    .footer .f3 a:hover {
+      color: #ff167d; }
+    .footer .f3 p:first-child {
+      color: #666; }
+      .footer .f3 p:first-child a {
+        margin-right: 32px; }
+    .footer .f3 p:last-child {
+      color: #999; }
+      .footer .f3 p:last-child span {
+        margin: 0 9px; }

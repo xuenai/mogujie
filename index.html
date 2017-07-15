@@ -5,6 +5,7 @@
 	<title>蘑菇街-我的买手街</title>
 	<link rel="icon" href="https://s10.mogucdn.com/new1/v1/bmisc/3ce382db3c8aaca5d07bd36711e77134/171169993508.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/init.css">
+	<link rel="stylesheet" type="text/css" href="css/head&foot.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
@@ -457,6 +458,84 @@
 
 <% } %>
 </script>
+
+
+<div class="cwxh">
+	<div class="title">猜我喜欢</div>
+	<div class="con clear">
+		<script type="text/html" id="cwxh">
+			<% for(var i=0,len = list.length;i<len;i++){
+				var now = list[i];
+			%>
+
+			<div>
+				<a href="#">
+					<img src= <%= now.picUrl %> />
+					<% if(now.hot){ %>
+						<span><img src="img/iconimg/icon10.jpg"></span>
+					<% } %>
+				</a>
+				<a class="zxs" href="#">找相似</a>
+				<a href="#">
+					<p><%= now.des %></p>
+					<div><span class='now'>¥<%= now.price[0] %></span><span class='old'>¥<%= now.price[1] %></span><p><%= now.star %></p></div>
+				</a>
+			</div>
+
+			<% } %>
+		</script>
+	</div>
+</div>
+
+<div class="footer"></div>
+
+<div class="side">
+	<a href="#"><img src="img/iconimg/icon12.jpg">购物车</a>
+	<a href="#"><img src="img/iconimg/icon13.jpg">优惠卷</a>
+	<a href="#"><img src="img/iconimg/icon14.jpg">钱包</a>
+	<a href="#"><img src="img/iconimg/icon15.jpg">足迹</a>
+	<a href="javascript:;" id='totop'>top</a>
+</div>
+
+<div class="bar">
+	<div class="wrap">
+		<div id="showall" class="left">
+			<a href="#">全部商品分类</a>
+		</div>
+		<div class="top">
+			<div class="top-l fl">
+				<span class="searchgood">搜商品</span>
+				<ul>
+					<li><a href="#">商品</a></li>
+					<li><a href="#">店铺</a></li>
+				</ul>
+			</div>
+			<form class="fr">
+				<input class='txt fl' type="text" placeholder="露背无袖连衣裙" />
+				<input class='btn fl' type="submit" value="搜 索" />
+				<div class="history">
+					<h3>历史记录</h3>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="shop">
+	<ul></ul>
+</div>
+
+<div class="palouti">
+	<a href="#">红人穿搭</a>
+	<a href="#">精选主题</a>
+	<a href="#">品牌特卖</a>
+	<a href="#">没人精选</a>
+	<a href="#">女装</a>
+	<a href="#">女鞋</a>
+	<a href="#">宝宝</a>
+	<a href="#">男友</a>
+	<a href="#">蘑菇优选</a>
+</div>
 
 <script type="text/html" id="bantuijian">
 					<% for(var i=0,len=list.length;i<len;i++){

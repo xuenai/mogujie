@@ -14,5 +14,9 @@ define(["jquery","cookie"],function(){
 		},function(){
 			$(this).removeClass('active');
 		});
+	});
+
+	$.get('/html/include/footer.html').then(function(data){
+		$('.footer').html(data);
 	})
 });

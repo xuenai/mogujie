@@ -1,13 +1,13 @@
 require(['config'],function(){
 	require(['jquery','template','tweenmax','include'],function($,template){
-		
-		$('.search .top-l').hover(function(){
+		//搜索栏部分
+		$('.search .top-l,.bar .top-l').hover(function(){
 			$(this).find('ul').show();
 		},function(){
 			$(this).find('ul').hide();
 		});
 
-		$('.search .top-l li').hover(function(){
+		$('.search .top-l li,.bar .top-l li').hover(function(){
 			$(this).addClass('active');
 		},function(){
 			$(this).removeClass('active');
@@ -19,6 +19,12 @@ require(['config'],function(){
 			$('.search .top .history').hide();
 		});
 
+		$('.bar .top .txt').focus(function(){
+			$('.bar .top .history').show();
+		}).blur(function(){
+			$('.bar .top .history').hide();
+		});
+		
 		$.getJSON('/data/searchHot.json',function(data){
 			var searchHot={
 					list:data
@@ -33,13 +39,15 @@ require(['config'],function(){
 					list:data
 				};
 			var html = template('theamemark',theame);
-			$('.banner .wrap ul').html(html);
+			$('.banner .wrap ul,.shop ul').html(html);
 
-			$('.banner ul li').hover(function(){
+			$('.banner ul li,.shop ul li').hover(function(){
 				$(this).css('background-color','white');
 			},function(){
 				$(this).css('background-color','');
 			});
+
+			//1
 			$('.banner .wrap').on('mouseover','ul li,.show',function(){
 				if($(this)[0].nodeName=="LI")
 					$('.banner .wrap .show').hide().eq($(this).index()).show();
@@ -51,6 +59,24 @@ require(['config'],function(){
 				else
 					$(this).hide();
 			});
+			//2
+			$('.shop').on('mouseover','ul li,.show',function(){
+				if($(this)[0].nodeName=="LI")
+					$('.shop .show').hide().eq($(this).index()).show();
+				else
+					$(this).show();
+			}).on('mouseout','ul li,.show',function(){
+				if($(this)[0].nodeName=="LI")
+					$('.shop .show').hide();
+				else
+					$(this).hide();
+			});
+			//fixed定位的显示菜单
+			$(document).on('mouseover','#showall,.shop',function(){
+					$('.shop').show();
+			}).on('mouseout','#showall,.shop',function(){
+					$('.shop').hide();
+			});
 		});
 
 		//主题市场展示
@@ -59,7 +85,7 @@ require(['config'],function(){
 					list:data
 				};
 			var html = template('shoplist',shoplist);
-			$('.banner .wrap').append(html);
+			$('.banner .wrap,.shop').append(html);
 
 
 			$.getJSON('/data/bantuijian.json',function(data){
@@ -67,7 +93,7 @@ require(['config'],function(){
 						list:data
 					};
 				var html = template('bantuijian',bantuijian);
-				$('.banner .wrap .show .right').append(html);
+				$('.banner .wrap .show .right,.shop .show .right').append(html);
 			});
 		});
 
@@ -157,24 +183,24 @@ require(['config'],function(){
 						break;
 					}
 				};
-				var nowa = $('.hotmen .con .left').children('a').eq(index2)[0];
-				// $('.hotmen .con .left').children('a').eq(index2).css({transform:"rotateY(-180deg)"});
-				var t = new TimelineMax();
-				t.to(nowa,1,{
-					rotationY:90,
-					onComplete:function(){
-						$imgs.eq(index2).attr({"src":arrOut[index].url});
-						$ps.eq(index2).text(arrOut[index].title);		
-					}
-				});
-				t.to(nowa,1,{
-					rotationY:0
-				});
-				// $imgs.eq(index2).attr({"src":arrOut[index].url});
-				// $ps.eq(index2).text(arrOut[index].title);
+				// var nowa = $('.hotmen .con .left').children('a').eq(index2)[0];
+				// var t = new TimelineMax();console.log(nowa)
+				// t.to(nowa,1,{
+				// 	rotationY:90,
+				// 	onComplete:function(){
+				// 		$imgs.eq(index2).attr({"src":arrOut[index].url});
+				// 		$ps.eq(index2).text(arrOut[index].title);
+				// 		console.log(nowa)		
+				// 	}
+				// });
+				// t.to(nowa,1,{
+				// 	rotationY:0
+				// });
+				$imgs.eq(index2).attr({"src":arrOut[index].url});
+				$ps.eq(index2).text(arrOut[index].title);
 				arrIn.push(arrOut[index]);
 				index2pre = index2;
-			},3000);
+			},4000);
 		});
 
 
@@ -250,6 +276,50 @@ require(['config'],function(){
 			};
 			html = template('loutemp',lou);
 			$('#lou').append(html);
-		})
+		});
+
+		//猜我喜欢
+		$.getJSON('/data/cwxh.json',function(data){
+			var cwxh = {
+				list:data
+			};
+			html = template('cwxh',cwxh);
+			$('.cwxh .con').append(html);
+		});
+
+		//侧边栏
+		(function(){
+			$(window).scrollTop()>0 ? $('#totop').show() :　$('#totop').hide();
+			$(window).scroll(function(){
+				$(window).scrollTop()>0 ? $('#totop').show() :　$('#totop').hide();
+				$(window).scrollTop()>500 ? $('.bar').show() :　$('.bar').hide();
+			});
+			$('#totop').click(function(){
+				$(document.body).animate({scrollTop:0});
+			})
+		})();
+
+		//跑楼梯
+		(function(){
+			var headerH = $('.hotmen').offset().top,
+				viewH = $(window).height(),
+				isWheel = true,
+				len = $('.palouti a').length,
+				$as = $('.palouti a');
+			$(window).scroll(function(){
+				var scrolltop = $(window).scrollTop();
+				if(scrolltop > headerH - viewH/2) $('.palouti').show(200);
+				else $('.palouti').hide(200);
+				console.log($('.hotmen,.jxzt,.lou>div'))
+				$('.hotmen,.jxzt,.lou>div').each(function(index,elem){
+					if(index > len-1) return;
+					var elemH=$(elem).offset().top-viewH/2;
+					if($(window).scrollTop() > elemH){
+						$as.eq(index).addClass('active').siblings().removeClass('active');
+					}
+				})
+			});
+
+		})();
 	});
 });
