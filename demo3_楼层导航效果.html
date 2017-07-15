@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.header {width: 900px;height: 1200px;background:gray;}
+		.floor {width: 900px;height: 800px;}
+		.footer {width: 900px;height: 500px;background: black;}
+		.nav {margin: 0;padding: 0;list-style: none; position: fixed; right:10px; bottom: 30px; display: none;}
+		.nav li {width: 50px;height: 40px;line-height: 40px; text-align: center; border: 1px solid; position: relative; cursor: default;}
+		.nav li span {width: 50px;height: 40px;line-height: 40px;text-align: center;position: absolute; top:0; left:0; background: #f00; display: none;}
+	</style>
+</head>
+<body>
+	<div class="header"></div>
+	<div class="main">
+		<div class="floor" style="background:#f00;">1L</div>
+		<div class="floor" style="background:#ff0;">2L</div>
+		<div class="floor" style="background:#0ff;">3L</div>
+		<div class="floor" style="background:#00f;">4L</div>
+	</div>
+	<div class="footer"></div>
+	<ul class="nav">
+		<li>1L<span style="display: inline-block;">服装</span></li>
+		<li>2L<span>家电</span></li>
+		<li>3L<span>数码</span></li>
+		<li>4L<span>零食</span></li>
+		<li>TOP</li>
+	</ul>
+
+	<script type="text/javascript" src="lib/jquery/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var headerHeight = $(".main").offset().top, // div.header 的布局结构的高度
+				winHeight = $(window).height(), // window 高度
+				isWheel = true, // 标识通过鼠标滚轮还是点击实现的滚动
+				currIndex = 0; // 当前显示楼层索引
+			// $(window).scroll(fn);
+			$(window).on("scroll", function(){
+				if (!isWheel)
+					return;
+				// 获取垂直滚动距离
+				var _scrollTop = $(window).scrollTop();
+				// 判断，导航显隐
+				if (_scrollTop > headerHeight - winHeight / 2) {
+					// $(".nav").stop().show(10000);
+					$(".nav").stop().fadeIn();
+				} else {
+					// $(".nav").stop().hide(10000);
+					$(".nav").stop().fadeOut();
+				}
+
+				// 导航样式切换
+				$(".floor").each(function(index, element){
+					// 获取当前遍历到楼层之前布局结构的高度
+					var _top = $(this).offset().top;
+					// 判断是否切换导航样式
+					if (_scrollTop > _top - winHeight / 2){
+						currIndex = index;
+						$(".nav li").eq(index)
+									.children("span").show().end()
+									.siblings()
+									.children("span").hide();
+					}
+				});
+			});
+
+			// 导航上的点击事件处理
+			$(".nav").on("click", "li:not(:last)", function(){
+				isWheel = false;
+				// 获取当前点击的 li 的索引
+				var index = currIndex = $(this).index();
+				/* 对应跳转到 index 索引的楼层上 */
+				// 求解 index 索引处楼层之前布局结构高度
+				var _top = $(".floor").eq(index).offset().top;
+				// 将当前点击 li 中的 span 显示
+				$(this).find("span").show().end()
+					   .siblings().find("span").hide();
+				// 动画效果
+				$("html,body").stop().animate({scrollTop : _top}, 1000, function(){
+					isWheel = true;
+				});
+			});
+
+			$("li").hover(function(){
+				$(this).find("span").show();
+			}, function(){
+				if ($(this).index() == currIndex)
+					return;
+				$(this).find("span").hide();
+			});
+
+			$("li:last").click(function(){
+				$(window).scrollTop(0);
+			});
+		});
+
+		// window.onscroll = function(){}
+	</script>
+</body>
+</html>
