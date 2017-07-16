@@ -88,6 +88,7 @@
 						margin-top: 34px;
 						background: #fff;
 						display: none;
+						z-index: 50;
 						h3{
 							line-height: 16px;
 							height: 16px;
@@ -157,7 +158,8 @@
 
 .banner{
 	height: 440px;
-	background-color: rgb(255,255,255);
+	background-color: #b9aabf;
+	transition:0.5s;
 	.wrap{
 		position: relative;
 		@extend .w1200;
@@ -516,7 +518,6 @@
 		.left{
 			width: 960px;
 			a{
-				transition:all 1s;
 				float: left;
 				margin-right: 10px;
 				position: relative;
@@ -1397,11 +1398,11 @@
 .palouti{
 	position: fixed;
 	display: none;
-	top: 0px;
+	top:50%;
+	margin: -260px 0 0 0;
 	z-index: 17;
 	left: 0px;
 	width: 32px;
-	height: 100%;
 	background-color: rgba(0,0,0,0.4);
 	a{
 		display: block;
@@ -1409,9 +1410,10 @@
 		text-align: center;
 		border-bottom: 1px solid #ccc;
 		padding: 15px 0;
+		transition:0.2s;
 	}
 	a:first-child{
-		margin-top: 200px;
+		/*margin-top: 200px;*/
 	}
 	a:last-child{
 		border-bottom: none;

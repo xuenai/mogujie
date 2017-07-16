@@ -78,7 +78,8 @@
             margin-left: -2px;
             margin-top: 34px;
             background: #fff;
-            display: none; }
+            display: none;
+            z-index: 50; }
             .search .wrap .center .top form .history h3 {
               line-height: 16px;
               height: 16px;
@@ -128,7 +129,8 @@
 
 .banner {
   height: 440px;
-  background-color: white; }
+  background-color: #b9aabf;
+  transition: 0.5s; }
   .banner .wrap {
     position: relative; }
     .banner .wrap > ul {
@@ -411,7 +413,6 @@
   .hotmen .con .left {
     width: 960px; }
     .hotmen .con .left a {
-      transition: all 1s;
       float: left;
       margin-right: 10px;
       position: relative; }
@@ -1109,20 +1110,21 @@
 .palouti {
   position: fixed;
   display: none;
-  top: 0px;
+  top: 50%;
+  margin: -260px 0 0 0;
   z-index: 17;
   left: 0px;
   width: 32px;
-  height: 100%;
   background-color: rgba(0, 0, 0, 0.4); }
   .palouti a {
     display: block;
     color: #fff;
     text-align: center;
     border-bottom: 1px solid #ccc;
-    padding: 15px 0; }
+    padding: 15px 0;
+    transition: 0.2s; }
   .palouti a:first-child {
-    margin-top: 200px; }
+    /*margin-top: 200px;*/ }
   .palouti a:last-child {
     border-bottom: none; }
   .palouti a:hover {

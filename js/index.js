@@ -108,26 +108,28 @@ require(['config'],function(){
 			html += pt;
 			$('.banner .bannershow').append(html);
 
-			var as=$('.bannershow > a'),pts=$('.bannershow .pt a'),timer=null;
-			timer = setInterval(go,2000);
+			var as=$('.bannershow > a'),pts=$('.bannershow .pt a'),timer=null,$banner = $('.banner'),bgcArr=["#b9aabf","#8fb3b9","#f65da5","#edf1f4"];
+			timer = setInterval(go,3000);
 
 			function go(){
-				as.eq(current).fadeOut();
+				as.eq(current).fadeOut(500);
 				pts.eq(current).css("background-color","#e7e7e7");
 				current++;
 				if(current >= len){
 					current=0;
 				}
+				$banner.css("background-color",bgcArr[current]);
 				pts.eq(current).css("background-color","#ff0077");
-				as.eq(current).fadeIn();
+				as.eq(current).fadeIn(500);
 			}
 
 			pts.on('mouseover',function(){
-				as.eq(current).fadeOut();
+				if($(this).index() == current) return;
+				as.eq(current).fadeOut(500);
 				pts.eq(current).css("background-color","#e7e7e7");
 				current = $(this).index();
 				pts.eq(current).css("background-color","#ff0077");
-				as.eq(current).fadeIn();
+				as.eq(current).fadeIn(500);
 			});
 
 			$('.bannershow').hover(function(){
@@ -179,26 +181,22 @@ require(['config'],function(){
 				// console.log($ps.eq(index2).text())//之前获取到的$ps在这里已经变化了，不能在使用，要从新再次获取
 				for(var i=0,len=arrIn.length;i<len;i++){
 					if(arrIn[i].title==$ps.eq(index2).text()){
-						arrIn.splice(i,1);
+						arrIn.splice(i,1,arrOut[index]);
 						break;
 					}
 				};
-				// var nowa = $('.hotmen .con .left').children('a').eq(index2)[0];
-				// var t = new TimelineMax();console.log(nowa)
-				// t.to(nowa,1,{
-				// 	rotationY:90,
-				// 	onComplete:function(){
-				// 		$imgs.eq(index2).attr({"src":arrOut[index].url});
-				// 		$ps.eq(index2).text(arrOut[index].title);
-				// 		console.log(nowa)		
-				// 	}
-				// });
-				// t.to(nowa,1,{
-				// 	rotationY:0
-				// });
-				$imgs.eq(index2).attr({"src":arrOut[index].url});
-				$ps.eq(index2).text(arrOut[index].title);
-				arrIn.push(arrOut[index]);
+				var t = new TimelineMax();
+				var nowa = $('.hotmen .con .left').children('a').eq(index2)[0];
+				t.to(nowa,1,{
+					rotationY:90,
+					onComplete:function(){
+						$imgs.eq(index2).attr({"src":arrOut[index].url});
+						$ps.eq(index2).text(arrOut[index].title);
+					}
+				});
+				t.to(nowa,1,{
+					rotationY:0
+				});
 				index2pre = index2;
 			},4000);
 		});
@@ -220,7 +218,7 @@ require(['config'],function(){
 				clearInterval(timer);
 			},function(){
 				$('#prev,#next').hide();
-				timer = setInterval(change,2000);
+				timer = setInterval(change,3000);
 			});
 
 			$('#next').click(function(){
@@ -237,7 +235,7 @@ require(['config'],function(){
 				change();
 			})
 
-			timer = setInterval(change,2000);
+			timer = setInterval(change,3000);
 			function change(){
 				if(offbtn){
 					offbtn = false;
@@ -276,6 +274,45 @@ require(['config'],function(){
 			};
 			html = template('loutemp',lou);
 			$('#lou').append(html);
+
+
+			//跑楼梯
+			(function(){
+				var headerH = $('.hotmen').offset().top,
+					viewH = $(window).height(),
+					isWheel = true,
+					len = $('.palouti a').length-1,
+					$as = $('.palouti a:not(:last)'),
+					$lous = $('.plys');
+				$(window).scroll(function(){
+					var scrolltop = $(window).scrollTop();
+					if(scrolltop > (headerH - viewH/2)) $('.palouti').show(200);//这里大于的优先级竟然比减要高
+					else $('.palouti').hide(200);
+					$lous.each(function(index,elem){
+						if(index > len-1) return;
+						var elemH=$(elem).offset().top-viewH/2 - 140;
+						if($(window).scrollTop() > elemH){
+							$as.eq(index).addClass('active').siblings().removeClass('active');
+						}
+					})
+				});
+				$('.palouti').on('click','a:not(:last)',function(){//千万注意，这里的选择器是当前父元素下的，不能写全比如.palouti a等等。
+					var index = $(this).index(),
+						dis = $lous.eq(index).offset().top-160;
+					$('html,body').stop().animate({scrollTop:dis});
+				});
+				// $('.palouti').on('click',$as,function(e){//1传人jq对象时函数内的this竟然是指向委托的父元素，传入选择器是当前元素.注意事项.2Dom异步加载没完成获取它元素是不到的
+				// 	var index = $(e.target).index();//3这里的元素能获取到$as之外的元素
+				// 	var	dis = $lous.eq(index).offset().top-160;
+				// 	console.log($(this))
+				// 	console.log($(e.target));
+				// 	if($(e.target)[0] != $('.palouti a:last')[0])
+				// 	$('html,body').stop().animate({scrollTop:dis});
+				// });
+				$('.palouti a:last').on('click',function(){
+					$('html,body').stop().animate({scrollTop:0})
+				})
+			})();
 		});
 
 		//猜我喜欢
@@ -299,27 +336,6 @@ require(['config'],function(){
 			})
 		})();
 
-		//跑楼梯
-		(function(){
-			var headerH = $('.hotmen').offset().top,
-				viewH = $(window).height(),
-				isWheel = true,
-				len = $('.palouti a').length,
-				$as = $('.palouti a');
-			$(window).scroll(function(){
-				var scrolltop = $(window).scrollTop();
-				if(scrolltop > headerH - viewH/2) $('.palouti').show(200);
-				else $('.palouti').hide(200);
-				console.log($('.hotmen,.jxzt,.lou>div'))
-				$('.hotmen,.jxzt,.lou>div').each(function(index,elem){
-					if(index > len-1) return;
-					var elemH=$(elem).offset().top-viewH/2;
-					if($(window).scrollTop() > elemH){
-						$as.eq(index).addClass('active').siblings().removeClass('active');
-					}
-				})
-			});
-
-		})();
+		
 	});
 });
