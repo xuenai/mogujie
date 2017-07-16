@@ -5,6 +5,8 @@ require.config({
 		"cookie" : "lib/jquery_plugins/jquery.cookie",
 		"template" : "lib/arttemplate/template-native",
 		"include" : "js/include",
-		"tweenmax":"lib/tweenmax/TweenMax.min"
+		"tweenmax":"lib/tweenmax/TweenMax.min",
+		"footer":"js/footer",
+		"header":"js/header"
 	}
 })
