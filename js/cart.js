@@ -1,5 +1,5 @@
 require(['config'],function(){
-	require(['jquery','template','header','footer'],function(){
+	require(['jquery','template','header','footer'],function($,template){
 		//侧边栏
 		(function(){
 			$(window).scrollTop()>0 ? $('#totop').show() :　$('#totop').hide();
@@ -11,5 +11,6 @@ require(['config'],function(){
 				$(document.body).animate({scrollTop:0});
 			})
 		})();
+
 	})
 })

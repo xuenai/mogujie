@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>蘑菇街-我的买手街</title>
+	<link rel="icon" href="https://s10.mogucdn.com/new1/v1/bmisc/3ce382db3c8aaca5d07bd36711e77134/171169993508.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="/css/init.css">
+	<link rel="stylesheet" type="text/css" href="/css/head&foot.css">
+	<link rel="stylesheet" type="text/css" href="/css/details.css">
+</head>
+<body style='height:2000px;'>
+<div class="header"></div>
+
+<div class="search">
+	<div class="wrap">
+		<a href="#">蘑菇街</a>
+		<div class="center fl">
+			<div class="top">
+				<div class="top-l fl">
+					<span class="searchgood">搜商品</span>
+					<ul>
+						<li><a href="#">商品</a></li>
+						<li><a href="#">店铺</a></li>
+					</ul>
+				</div>
+				<form class="fr">
+					<input class='txt fl' type="text" placeholder="露背无袖连衣裙" />
+					<input class='btn fl' type="submit" value="搜 索" />
+					<div class="history">
+						<h3>历史记录</h3>
+					</div>
+				</form>
+			</div>
+			<div class="bottom">
+				<script type="text/html" id="search-hot">
+					<% for(var i=0;i<list.length;i++) {
+						var hotwho=list[i];
+					 %>
+					 	<% if(hotwho.hot) { %>
+							<a href="#" class="hot"><%= hotwho.content %></a>
+						<% }else{ %>
+							<a href="#"><%= hotwho.content %></a>
+						<% } %>
+					<% } %>
+				</script>
+			</div>
+		</div>
+		<img src="/img/saoys.png" class="fr" />
+	</div>
+</div>
+
+<div class="body">
+	<p><a href="#">首页</a><span>></span><a href="#">红人穿搭</a><span>></span><a href="#">穿搭详情</a></p>
+	<div class="top">
+		<div class="left">
+			<div class='pic'>
+				<img src="/img/details/details1.jpg">
+			</div>
+			<div class="list">
+				<ul>
+					<li><img src="http://s2.mogucdn.com/mlcdn/c45406/170701_7a0kh37be5add78ckd2479e7ba2b7_640x960.jpg_100x100.v1cOC.jpg"></li>
+					<li><img src="http://s2.mogucdn.com/mlcdn/c45406/170701_7a0kh37be5add78ckd2479e7ba2b7_640x960.jpg_100x100.v1cOC.jpg"></li>
+					<li><img src="http://s2.mogucdn.com/mlcdn/c45406/170701_7a0kh37be5add78ckd2479e7ba2b7_640x960.jpg_100x100.v1cOC.jpg"></li>
+					<li><img src="http://s2.mogucdn.com/mlcdn/c45406/170701_7a0kh37be5add78ckd2479e7ba2b7_640x960.jpg_100x100.v1cOC.jpg"></li>
+					<li><img src="http://s2.mogucdn.com/mlcdn/c45406/170701_7a0kh37be5add78ckd2479e7ba2b7_640x960.jpg_100x100.v1cOC.jpg"></li>
+					<li><img src="http://s2.mogucdn.com/mlcdn/c45406/170701_7a0kh37be5add78ckd2479e7ba2b7_640x960.jpg_100x100.v1cOC.jpg"></li>
+				</ul>
+				<span class='prev'><</span>
+				<span class='next'>></span>
+			</div>
+		</div>
+		<div class="right">
+			<div class="top">
+				<p class='title'><span>西西里</span><a href="#"><img src="/img/iconimg/icon19.jpg"> TA的小店</a></p>
+				<p class="desp">东大门时尚潮流女装</p>
+			</div>
+			<div class="des">
+				<p>#毕业季# #买齐一夏天# #小个子懒人装#简约俏丽的圆领设计，衬托出娇小的脸型，更展现性感迷人的锁骨无袖的设计让你的芊芊玉臂得到释放，自由随性阔腿裤的洒脱气质，不失青春的休闲格调，让气质与时尚并存，演绎魅力人生穿上非常有范，气场满满的呢 关注西西里，更多穿搭推荐
+</p>
+			</div>
+			<div class="with">
+				<p>搭配商品</p>
+				<div>
+					<a href="#">
+						<img src="/img/details/details2.jpg">
+						<p><nobr>西西里四季百搭韩版新款纯色无袖女打底针织棉料吊带背心上衣女</nobr></p>
+						<span>¥99.30</span>
+					</a>
+				</div>
+				<div>
+					<a href="#">
+						<img src="/img/details/details3.jpg">
+						<p><nobr>西西里四季百搭韩版新款纯色无袖女打底针织棉料吊带背心上衣女</nobr></p>
+						<span>¥99.30</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="side">
+	<a href="#"><img src="/img/iconimg/icon12.jpg">购物车</a>
+	<a href="#"><img src="/img/iconimg/icon13.jpg">优惠卷</a>
+	<a href="#"><img src="/img/iconimg/icon14.jpg">钱包</a>
+	<a href="#"><img src="/img/iconimg/icon15.jpg">足迹</a>
+	<a href="javascript:;" id='totop'>top</a>
+</div>
+
+<div class="bar">
+	<div class="wrap">
+		<div id="showall" class="left">
+			<a href="#" title='蘑菇街'></a>
+		</div>
+		<div class="top">
+			<div class="top-l fl">
+				<span class="searchgood">搜商品</span>
+				<ul>
+					<li><a href="#">商品</a></li>
+					<li><a href="#">店铺</a></li>
+				</ul>
+			</div>
+			<form class="fr">
+				<input class='txt fl' type="text" placeholder="露背无袖连衣裙" />
+				<input class='btn fl' type="submit" value="搜 索" />
+				<div class="history">
+					<h3>历史记录</h3>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="footer"></div>
+<script type="text/javascript" src='/lib/requirejs/require.js' data-main="/js/details"></script>
+</body>
+</html>

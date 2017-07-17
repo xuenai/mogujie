@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>确认订单</title>
+	<link rel="icon" href="https://s10.mogucdn.com/new1/v1/bmisc/3ce382db3c8aaca5d07bd36711e77134/171169993508.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="/css/init.css">
+	<link rel="stylesheet" type="text/css" href="/css/head&foot.css">
+	<link rel="stylesheet" type="text/css" href="/css/confirm.css">
+</head>
+<body style='height:1000px;background:#f4f4f4;'>
+<div class="header"></div>
+
+<div class="content">
+	<div class="wrap">
+		<div class="address">
+			<h3>选择收货地址</h3>
+			<p><a href="#">管理收货地址</a><a href="#">使用新地址</a></p>
+			<div class='s'>
+				省：<span>*</span>
+				<select>
+					<option>北京市</option>
+					<option>上海市大家</option>
+					<option>深圳市</option>
+					<option>西红柿</option>
+				</select>
+				市：<span>*</span>
+				<select>
+					<option>北京市</option>
+					<option>上海市</option>
+					<option>深圳市</option>
+					<option>西红柿</option>
+				</select>
+				区：<span>*</span>
+				<select>
+					<option>北京市</option>
+					<option>上海市</option>
+					<option>深圳市</option>
+					<option>西红柿</option>
+				</select>
+			</div>
+			<div class="yzbm">
+				邮政编码：<span>*</span><input type="text" />
+			</div>
+			<div class="jddz">
+				街道地址：<span>*</span> <textarea></textarea>
+				<p>请填写街道地址，最少5个字，最多不能超过100个字</p>
+			</div>
+			<div class="ren">
+				收货人姓名：<span>*</span><input type="text" />
+			</div>
+			<div class="tel">
+				手机：<span>*</span><input type="text" />
+			</div>
+			<div class="cfm">
+				<span>确认地址</span><span>取消</span>
+			</div>
+		</div>
+
+		<div class="confirm">
+			<h3>确认商品信息</h3>
+			<div class="getall">
+				<p>商品</p>
+				<div class="right">
+					<span>商品信息</span>
+					<span>单价（元）</span>
+					<span>数量</span>
+					<span>小计（元）</span>
+				</div>
+			</div>
+
+			<div class="good1">
+				<div class="center">
+					<img src="/img/details/detailsimg1.jpg">
+					<p><a href="#">  凡兔女装2017夏装新款韩版女士裤子脚口开叉休闲阔腿九分裤女 装新款韩版女士裤子脚口开叉休闲阔腿九分裤女 </a></p>
+				</div>
+				<div class="right">
+					<span>颜色：<b>黑色</b><br>尺码：<b>L</b></span>
+					<span><b class='now'>55.80</b></span>
+					<span class='count'>1</span>
+					<span class='pri'>218</span>
+				</div>
+			</div>
+
+			<div class="good1">
+				<div class="center">
+					<img src="/img/details/detailsimg1.jpg">
+					<p><a href="#">  凡兔女装2017夏装新款韩版女士裤子脚口开叉休闲阔腿九分裤女 装新款韩版女士裤子脚口开叉休闲阔腿九分裤女 </a></p>
+				</div>
+				<div class="right">
+					<span>颜色：<b>黑色</b><br>尺码：<b>L</b></span>
+					<span><b class='now'>55.80</b></span>
+					<span class='count'>1</span>
+					<span class='pri'>218</span>
+				</div>
+			</div>
+
+			<div class="total">合计： <span>185.00</span></div>
+
+			<div class="compute">
+				<div class="le">
+					<a href="javascript:;">返回购物车</a>
+				</div>
+				<p>共有	<span>0</span>	件商品,总计 <span class='rmb'>¥</span><b>0.00</b><a href="javascript:;">确认并付款 ＞ </a>	</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="side">
+	<a href="#"><img src="/img/iconimg/icon12.jpg">购物车</a>
+	<a href="#"><img src="/img/iconimg/icon13.jpg">优惠卷</a>
+	<a href="#"><img src="/img/iconimg/icon14.jpg">钱包</a>
+	<a href="#"><img src="/img/iconimg/icon15.jpg">足迹</a>
+	<a href="javascript:;" id='totop'>top</a>
+</div>
+
+<div class="footer"></div>
+<script type="text/javascript" src='/lib/requirejs/require.js' data-main="/js/confirm"></script>
+</body>
+</html>

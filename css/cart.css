@@ -1,0 +1,177 @@
+.w1200, .content .wrap {
+  width: 1200px;
+  margin: 0 auto; }
+
+.side {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 30px;
+  background: #202020;
+  height: 100%; }
+  .side a {
+    display: block;
+    padding: 13px 5px;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid #919191;
+    color: #fff; }
+  .side a:first-child {
+    margin-top: 99px; }
+  .side a:hover {
+    background-color: red; }
+  .side a:last-child {
+    position: absolute;
+    bottom: 20px;
+    border-bottom: none;
+    border-top: 1px solid #919191; }
+
+.content {
+  min-height: 700px; }
+  .content .wrap h3 {
+    height: 50px;
+    margin-top: 40px; }
+    .content .wrap h3 a {
+      display: inline-block;
+      border-bottom: 3px solid #ff4466;
+      padding: 0 2px;
+      color: #ff4466;
+      height: 38px;
+      line-height: 38px;
+      font-size: 18px;
+      font-weight: normal; }
+  .content .wrap .getall {
+    height: 48px;
+    border: 1px solid #e5e5e5;
+    padding-left: 24px;
+    line-height: 48px;
+    background-color: #f6f6f6; }
+    .content .wrap .getall input {
+      vertical-align: middle;
+      margin-top: -2px; }
+    .content .wrap .getall div {
+      float: right;
+      margin-right: 30px; }
+      .content .wrap .getall div span:nth-of-type(1) {
+        margin-right: 130px; }
+      .content .wrap .getall div span:nth-of-type(2) {
+        margin-right: 100px; }
+      .content .wrap .getall div span:nth-of-type(3) {
+        margin-right: 90px; }
+      .content .wrap .getall div span:nth-of-type(4) {
+        margin-right: 55px; }
+  .content .wrap .good1 {
+    height: 95px;
+    padding-left: 24px;
+    padding-top: 15px;
+    border: 1px solid #e5e5e5;
+    margin-top: 25px;
+    background: #f4f4f4; }
+    .content .wrap .good1 > input {
+      float: left; }
+    .content .wrap .good1 .center {
+      float: left;
+      margin-left: 30px;
+      width: 490px; }
+      .content .wrap .good1 .center img {
+        width: 79px;
+        height: 79px;
+        border: 1px solid #ccc; }
+      .content .wrap .good1 .center p {
+        float: right;
+        width: 390px;
+        padding-right: 10px; }
+        .content .wrap .good1 .center p a {
+          color: #666; }
+        .content .wrap .good1 .center p a:hover {
+          text-decoration: underline; }
+    .content .wrap .good1 .right {
+      float: right;
+      margin-right: 30px; }
+      .content .wrap .good1 .right > span {
+        float: left;
+        width: 100px; }
+        .content .wrap .good1 .right > span .old {
+          color: #666;
+          text-decoration: line-through; }
+        .content .wrap .good1 .right > span .now {
+          font-weight: bold !important; }
+        .content .wrap .good1 .right > span .zhe {
+          color: red; }
+      .content .wrap .good1 .right span:nth-of-type(1) {
+        margin-right: 82px; }
+        .content .wrap .good1 .right span:nth-of-type(1) b {
+          font-weight: normal; }
+      .content .wrap .good1 .right span:nth-of-type(2) {
+        margin-right: 27px;
+        line-height: 20px; }
+        .content .wrap .good1 .right span:nth-of-type(2) b {
+          font-weight: normal; }
+      .content .wrap .good1 .right span:nth-of-type(3) {
+        display: inline-block;
+        border: 1px solid #dfdfdf;
+        width: 95px;
+        height: 25px;
+        margin-right: 57px; }
+        .content .wrap .good1 .right span:nth-of-type(3) input {
+          width: 43px;
+          height: 25px;
+          border: none;
+          float: left;
+          text-align: center;
+          outline: none; }
+        .content .wrap .good1 .right span:nth-of-type(3) a {
+          display: block;
+          float: left;
+          text-align: center;
+          height: 25px;
+          width: 25px;
+          line-height: 25px;
+          color: #666; }
+        .content .wrap .good1 .right span:nth-of-type(3) a:first-child {
+          border-right: 1px solid #dfdfdf; }
+        .content .wrap .good1 .right span:nth-of-type(3) a:last-child {
+          border-left: 1px solid #dfdfdf; }
+      .content .wrap .good1 .right span:nth-of-type(4) {
+        margin-right: 16px;
+        width: 102px;
+        color: red; }
+      .content .wrap .good1 .right span:nth-of-type(5) {
+        width: auto;
+        text-align: right; }
+        .content .wrap .good1 .right span:nth-of-type(5) a {
+          color: #666; }
+  .content .wrap .compute {
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 24px;
+    border: 1px solid #e5e5e5;
+    margin-top: 20px; }
+    .content .wrap .compute .le {
+      float: left; }
+      .content .wrap .compute .le input {
+        margin-right: 20px; }
+      .content .wrap .compute .le a {
+        margin-right: 15px;
+        color: #666; }
+    .content .wrap .compute p {
+      float: right; }
+      .content .wrap .compute p a {
+        color: #fff;
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        background-color: #d8d8d8;
+        font-size: 20px;
+        text-align: center;
+        float: right;
+        margin-left: 13px; }
+      .content .wrap .compute p a.active {
+        background-color: red; }
+      .content .wrap .compute p .rmb, .content .wrap .compute p b {
+        color: red;
+        font-size: 20px;
+        vertical-align: middle; }
+      .content .wrap .compute p span {
+        color: red; }

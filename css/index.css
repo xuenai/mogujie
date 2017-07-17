@@ -94,6 +94,9 @@
           margin-right: 12px; }
         .search .wrap .center .bottom a.hot {
           color: #ff0077; }
+        .search .wrap .center .bottom a:hover {
+          color: #ff0077;
+          text-decoration: underline; }
     .search .wrap img {
       width: 220px;
       height: 90px; }
