@@ -8,8 +8,121 @@
 	<link rel="stylesheet" type="text/css" href="/css/head&foot.css">
 	<link rel="stylesheet" type="text/css" href="/css/list.css">
 </head>
-<body style='height:1000px;background:#f4f4f4;'>
+<body style='height:1000px;'>
 <div class="header"></div>
+
+<div class="search">
+	<div class="wrap">
+		<a href="#">蘑菇街</a>
+		<div class="center fl">
+			<div class="top">
+				<div class="top-l fl">
+					<span class="searchgood">搜商品</span>
+					<ul>
+						<li><a href="#">商品</a></li>
+						<li><a href="#">店铺</a></li>
+					</ul>
+				</div>
+				<form class="fr">
+					<input class='txt fl' type="text" placeholder="露背无袖连衣裙" />
+					<input class='btn fl' type="submit" value="搜 索" />
+					<div class="history">
+						<h3>历史记录</h3>
+					</div>
+				</form>
+			</div>
+			<div class="bottom">
+				<script type="text/html" id="search-hot">
+					<% for(var i=0;i<list.length;i++) {
+						var hotwho=list[i];
+					 %>
+					 	<% if(hotwho.hot) { %>
+							<a href="#" class="hot"><%= hotwho.content %></a>
+						<% }else{ %>
+							<a href="#"><%= hotwho.content %></a>
+						<% } %>
+					<% } %>
+				</script>
+			</div>
+		</div>
+		<img src="/img/saoys.png" class="fr" />
+	</div>
+</div>
+
+<div class="tab">
+	<div class="wrap">
+		<ul class="tabul">
+			<li class="active"><a href="#">上衣</a></li>
+ 
+			<li><a href="#">裙子</a></li>
+ 
+			<li><a href="#">裤子</a></li>
+ 
+			<li class="active"><a href="#">内衣</a></li>
+ 
+			<li><a href="#">鞋子</a></li>
+ 
+			<li><a href="#">包包</a></li>
+ 
+			<li><a href="#">配饰</a></li>
+ 
+			<li><a href="#">男友</a></li>
+ 
+			<li><a href="#">美妆</a></li>
+ 
+			<li><a href="#">母婴</a></li>
+ 
+			<li><a href="#">家居</a></li>
+ 
+			<li><a href="#">百货</a></li>
+ 
+			<li><a href="#">食品</a></li>
+ 
+			<li><a href="#">家电</a></li>
+ 
+			<li><a href="#">运动</a></li>
+		</ul>
+
+		<div>
+			<div class="left">
+				<div>
+					<h3>当季热卖</h3>
+					<div>
+						<img src="/img/list/list1.jpg" alt="">
+						<p><a href="javascript:;">美裙套装</a><span>|</span><a href="javascript:;">半身裙</a><span>|</span><a href="javascript:;">连衣裙</a><span>|</span><a href="javascript:;">卫衣裙</a><span>|</span><a href="javascript:;">蕾丝裙</a><span>|</span><a href="javascript:;">高腰裙</a><span>|</span><a href="javascript:;">背带裙</a><span>|</span><a href="javascript:;">牛仔裙</a><span>|</span><a href="javascript:;">长裙</a><span>|</span><a href="javascript:;">包臀裙</a></p>
+					</div>
+				</div>
+				<div>
+					<h3>当季热卖</h3>
+					<div>
+						<img src="/img/list/list1.jpg" alt="">
+						<p><a href="javascript:;">美裙套装</a><span>|</span><a href="javascript:;">半身裙</a><span>|</span><a href="javascript:;">连衣裙</a><span>|</span><a href="javascript:;">卫衣裙</a><span>|</span><a href="javascript:;">蕾丝裙</a><span>|</span><a href="javascript:;">高腰裙</a><span>|</span><a href="javascript:;">背带裙</a><span>|</span><a href="javascript:;">牛仔裙</a><span>|</span><a href="javascript:;">长裙</a><span>|</span><a href="javascript:;">包臀裙</a></p>
+					</div>
+				</div>
+				<div>
+					<h3>当季热卖</h3>
+					<div>
+						<img src="/img/list/list1.jpg" alt="">
+						<p><a href="javascript:;">美裙套装</a><span>|</span><a href="javascript:;">半身裙</a><span>|</span><a href="javascript:;">连衣裙</a><span>|</span><a href="javascript:;">卫衣裙</a><span>|</span><a href="javascript:;">蕾丝裙</a><span>|</span><a href="javascript:;">高腰裙</a><span>|</span><a href="javascript:;">背带裙</a><span>|</span><a href="javascript:;">牛仔裙</a><span>|</span><a href="javascript:;">长裙</a><span>|</span><a href="javascript:;">包臀裙</a></p>
+					</div>
+				</div>
+				<div>
+					<h3>当季热卖</h3>
+					<div>
+						<img src="/img/list/list1.jpg" alt="">
+						<p><a href="javascript:;">美裙套装</a><span>|</span><a href="javascript:;">半身裙</a><span>|</span><a href="javascript:;">连衣裙</a><span>|</span><a href="javascript:;">卫衣裙</a><span>|</span><a href="javascript:;">蕾丝裙</a><span>|</span><a href="javascript:;">高腰裙</a><span>|</span><a href="javascript:;">背带裙</a><span>|</span><a href="javascript:;">牛仔裙</a><span>|</span><a href="javascript:;">长裙</a><span>|</span><a href="javascript:;">包臀裙</a></p>
+					</div>
+				</div>
+			</div>
+
+			<div class="right">
+				<a href="#">
+					<img src="/img/list/list2.jpg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
 
 <div class="side">
 	<a href="#"><img src="/img/iconimg/icon12.jpg">购物车</a>
