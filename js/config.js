@@ -7,6 +7,7 @@ require.config({
 		"include" : "js/include",
 		"tweenmax":"lib/tweenmax/TweenMax.min",
 		"footer":"js/footer",
-		"header":"js/header"
+		"header":"js/header",
+		"fly":"lib/jquery_plugins/jquery.fly.min"
 	}
 })

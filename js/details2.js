@@ -149,6 +149,31 @@ require(['config'],function(){
 			var products = $.cookie('products') || [];
 			products.push(product);
 			$.cookie('products',products,{expires:7,path:"/"});
+		});
+
+		require(['fly'],function(){
+			//购物车
+			$('.detail .btn span').on('click',function(e){
+				var src = $(this).parents('.detail').find('li.active img').attr('src');
+				var flyer = $('<img src="'+src+'" />');
+				var offset = $('.side a:first img').offset();
+				flyer.fly({
+					start:{
+						left : e.clientX,
+						top : e.clientY
+					},
+					end:{
+						top : offset.top - $(window).scrollTop(),
+						left : offset.left - $(window).scrollLeft(),
+						width : 10,
+						height : 10
+					},
+					onEnd:function(){
+						console.log(1);
+						// this.destory();
+					}
+				})
+			})
 		})
 	})
 })
