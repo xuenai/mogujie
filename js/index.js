@@ -1,5 +1,5 @@
 require(['config'],function(){
-	require(['jquery','template','tweenmax','include'],function($,template){
+	require(['jquery','template','tweenmax','header','footer'],function($,template){
 		//搜索栏部分
 		$('.search .top-l,.bar .top-l').hover(function(){
 			$(this).find('ul').show();
@@ -161,9 +161,12 @@ require(['config'],function(){
 
 		//红人穿搭
 		$.getJSON('/data/hotmen.json',function(data){
-			var arrOut=data,arrIn=[],timer=null,
+			var arrOut=[],arrIn=[],timer=null,
 			    $imgs = $('.hotmen .con .left').find('img'),
 			    $ps = $('.hotmen .con .left').find('p'),index2pre = -1;
+			$.each(data,function(i,obj){
+				arrOut.push($.extend(true,{},obj));
+			});
 			$imgs.each(function(index,elem){
 				$(elem).attr({"src":data[index].url});
 				$ps.eq(index).text(data[index].title);
@@ -178,6 +181,7 @@ require(['config'],function(){
 				while(index2pre == index2){
 					index2 = Math.floor(Math.random()*arrIn.length);
 				};
+				//注意数组引用数据类型带来的问题，这里arrin，arrout都是原数组，arrin删除后把原数组也删除了
 				// console.log($ps.eq(index2).text())//之前获取到的$ps在这里已经变化了，不能在使用，要从新再次获取
 				for(var i=0,len=arrIn.length;i<len;i++){
 					if(arrIn[i].title==$ps.eq(index2).text()){
@@ -187,14 +191,14 @@ require(['config'],function(){
 				};
 				var t = new TimelineMax();
 				var nowa = $('.hotmen .con .left').children('a').eq(index2)[0];
-				t.to(nowa,1,{
+				t.to(nowa,0.5,{
 					rotationY:90,
 					onComplete:function(){
 						$imgs.eq(index2).attr({"src":arrOut[index].url});
 						$ps.eq(index2).text(arrOut[index].title);
 					}
 				});
-				t.to(nowa,1,{
+				t.to(nowa,0.5,{
 					rotationY:0
 				});
 				index2pre = index2;

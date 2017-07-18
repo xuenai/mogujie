@@ -20,25 +20,26 @@
 		<form action="#">
 			<h3>新用户注册</h3>
 			<div>
-				<p>请输入手机号码</p>
+				<p class='warning'>请输入合法的手机号码</p>
 				<div class="tel">
 					<select name="country">
-						<option value="555">中国</option>
-						<option value="555">美国</option>
-						<option value="555">法短发国</option>
-						<option value="555">日本</option>
+						<option>中国</option>
+						<option>美国</option>
+						<option>法国</option>
+						<option>日本</option>
 					</select>
-					<input type="text" placeholder="手机号码" />
+					<input id='tel' type="text" placeholder="手机号码" />
 				</div>
 				<div class="yzm">
-					<a href="#">点击获取验证码</a>
+					<a href="javascript:;">点击获取验证码</a>
 					<input type="text" placeholder="验证码" />
+					<p></p>
 				</div>
 				<div class="btn">
 					<input type="submit" value="立即注册">
 				</div>
 				<div class="xieyi">
-					<label><input type="checkbox"><span> 我已阅读并且同意<a href="#">《蘑菇街网络服务使用协议》</a></span></label>
+					<label><input class='check' type="checkbox"><span> 我已阅读并且同意<a href="#">《蘑菇街网络服务使用协议》</a></span></label>
 				</div>
 				<div class="yyou"><a href="#"><已有账号直接登录</a></div>
 			</div>

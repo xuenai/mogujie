@@ -1,7 +1,15 @@
 define(["jquery","cookie"],function(){
 	$.get('/html/include/header.html',function(data){
-		$('.header').append(data);
-		
+		$.cookie.json = true;
+		var user = $.cookie('user'); 
+		console.log(user)
+		if(user){
+			$(data).find('.register,.login').hide().end()
+				   .find('.user_in a').html('欢迎来自 '+user.country+'的 '+user.username+' 用户').end()
+				   .appendTo('.header'); 
+		}else{
+			$('.header').append(data);
+		}		
 		$('.cartli,.kfli,.myshopli').hover(function(){
 			$(this).find('.sh').show();
 			console.log(1);

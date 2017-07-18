@@ -48,6 +48,7 @@
           height: 30px;
           padding-left: 40px;
           color: red;
+          display: none;
           background: url(/img/iconimg/icon17.jpg) no-repeat left center #fff;
           border: 1px solid #ffc98d;
           margin-bottom: 9px; }
@@ -91,6 +92,11 @@
             margin-right: 10px;
             text-decoration: none;
             font-size: 11px; }
+          .con .wrap form > div .yzm p {
+            display: none;
+            margin-top: 50px;
+            background: none;
+            width: 200px; }
           .con .wrap form > div .yzm input {
             width: 192px;
             height: 36px;

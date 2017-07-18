@@ -60,6 +60,8 @@
         margin-right: 90px; }
       .content .wrap .getall div span:nth-of-type(4) {
         margin-right: 55px; }
+  .content .wrap .active {
+    background: #f5e0ed !important; }
   .content .wrap .good1 {
     height: 95px;
     padding-left: 24px;

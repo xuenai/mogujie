@@ -181,11 +181,39 @@
     .detail .wrap .right {
       width: 400px;
       float: left;
-      margin-right: 20px; }
+      margin-right: 20px;
+      position: relative; }
+      .detail .wrap .right .bigpic {
+        position: absolute;
+        left: 404px;
+        top: 0;
+        width: 400px;
+        height: 600px;
+        overflow: hidden;
+        display: none; }
+        .detail .wrap .right .bigpic img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 500px;
+          height: 800px;
+          border: none; }
       .detail .wrap .right .pic {
         width: 400px;
         height: 600px;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        position: relative; }
+        .detail .wrap .right .pic img {
+          width: 400px;
+          height: 600px; }
+        .detail .wrap .right .pic .mask {
+          display: none;
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          background-color: rgba(0, 0, 0, 0.7);
+          left: 0;
+          top: 0; }
       .detail .wrap .right .list ul {
         padding-left: 30px; }
         .detail .wrap .right .list ul li {
@@ -199,6 +227,10 @@
             width: 60px;
             height: 60px; }
         .detail .wrap .right .list ul li:hover {
+          opacity: 1;
+          border-bottom: 2px solid #ff4466;
+          height: 58px; }
+        .detail .wrap .right .list ul li.active {
           opacity: 1;
           border-bottom: 2px solid #ff4466;
           height: 58px; }
@@ -244,6 +276,8 @@
           line-height: 29px;
           margin-right: 10px;
           color: #333; }
+        .detail .wrap .rgt .ruler a.active {
+          border: 1px solid red; }
       .detail .wrap .rgt .count {
         margin-top: 60px;
         padding-left: 10px;
@@ -258,7 +292,8 @@
             width: 24px;
             height: 25px;
             text-align: center;
-            line-height: 25px; }
+            line-height: 25px;
+            color: #666; }
           .detail .wrap .rgt .count div input {
             width: 44px;
             height: 25px;
@@ -270,14 +305,15 @@
       .detail .wrap .rgt .btn {
         padding-left: 55px;
         margin-top: 60px; }
-        .detail .wrap .rgt .btn span {
+        .detail .wrap .rgt .btn a, .detail .wrap .rgt .btn span {
           display: inline-block;
           width: 200px;
           height: 50px;
           text-align: center;
           line-height: 50px;
-          font-size: 20px; }
-        .detail .wrap .rgt .btn span:first-child {
+          font-size: 20px;
+          cursor: default; }
+        .detail .wrap .rgt .btn a {
           color: #fff;
           background: red;
           margin-right: 10px; }
