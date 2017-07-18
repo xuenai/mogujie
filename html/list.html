@@ -124,6 +124,82 @@
 	</div>
 </div>
 
+<div class="lou">
+	<div class="wrap">
+		<h3>连衣裙</h3>
+		<div class="choose">
+			<div class="mes">
+				<a href="#" class='active'>综合</a><span>|</span>
+				<a href="#">销量</a><span>|</span>
+				<a href="#">新品</a><span>|</span>
+			</div>
+			<div class="txt">
+				<span>¥</span>
+				<input type='text' />
+			</div>
+			<span>-</span>
+			<div class="txt">
+				<span>¥</span>
+				<input type='text' />
+			</div>
+			<div class="ok">确定</div>
+			<div class='range'><a href="#">60-90</a><a href="#">90-110</a><a href="#">110-150</a></div>
+		</div>
+		<div class="ad">
+			<div class="con clear">
+				<script type="text/html" id="cwxh">
+					<% for(var i=0,len = list.length;i<len;i++){
+						var now = list[i];
+					%>
+
+					<div>
+						<a href="#">
+							<img src= <%= now.picUrl %> />
+							<% if(now.hot){ %>
+								<span><img src="/img/iconimg/icon10.jpg"></span>
+							<% } %>
+						</a>
+						<a class="zxs" href="#">找相似</a>
+						<a href="#">
+							<p><%= now.des %></p>
+							<div><span class='now'>¥<%= now.price[0] %></span><span class='old'>¥<%= now.price[1] %></span><p><%= now.star %></p></div>
+						</a>
+					</div>
+
+					<% } %>
+				</script>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="bar">
+	<div class="wrap">
+		<div id="showall" class="left">
+			<a href="#" title='蘑菇街'></a>
+		</div>
+		<div class="top">
+			<div class="top-l fl">
+				<span class="searchgood">搜商品</span>
+				<ul>
+					<li><a href="#">商品</a></li>
+					<li><a href="#">店铺</a></li>
+				</ul>
+			</div>
+			<form class="fr">
+				<input class='txt fl' type="text" placeholder="露背无袖连衣裙" />
+				<input class='btn fl' type="submit" value="搜 索" />
+				<div class="history">
+					<h3>历史记录</h3>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
 <div class="side">
 	<a href="#"><img src="/img/iconimg/icon12.jpg">购物车</a>
 	<a href="#"><img src="/img/iconimg/icon13.jpg">优惠卷</a>

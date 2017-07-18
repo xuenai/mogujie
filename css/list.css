@@ -1,6 +1,14 @@
-.w1200, .search .wrap {
+.w1200, .search .wrap, .lou .wrap, .bar .wrap {
   width: 1200px;
   margin: 0 auto; }
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.clear {
+  zoom: 1; }
 
 .side {
   position: fixed;
@@ -188,3 +196,213 @@
               color: #e5e5e5; }
     .tab .wrap > div .right {
       float: right; }
+
+.lou .wrap {
+  margin-top: 23px; }
+  .lou .wrap h3 {
+    height: 47px;
+    line-height: 47px;
+    font-size: 23px;
+    font-weight: normal; }
+  .lou .wrap .choose {
+    height: 38px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    line-height: 38px; }
+    .lou .wrap .choose .mes {
+      float: left; }
+      .lou .wrap .choose .mes a {
+        color: #555; }
+      .lou .wrap .choose .mes a.active {
+        color: red; }
+      .lou .wrap .choose .mes span {
+        padding: 0 20px;
+        color: #cfcfcf; }
+    .lou .wrap .choose > span {
+      float: left;
+      padding: 0 5px; }
+    .lou .wrap .choose .txt {
+      float: left;
+      width: 46px;
+      height: 22px;
+      border: 1px solid #e5e5e5;
+      margin-top: 7px; }
+      .lou .wrap .choose .txt span {
+        float: left;
+        line-height: 22px;
+        padding: 0 2px; }
+      .lou .wrap .choose .txt input {
+        width: 31px;
+        height: 22px;
+        border: none;
+        float: left;
+        outline: none; }
+    .lou .wrap .choose .ok {
+      float: left;
+      width: 45px;
+      height: 22px;
+      border: 1px solid #e5e5e5;
+      margin-top: 7px;
+      line-height: 22px;
+      text-align: center;
+      margin-left: 10px;
+      cursor: default; }
+    .lou .wrap .choose .range {
+      margin-left: 10px;
+      border: 1px solid #e5e5e5;
+      float: left;
+      margin-top: 7px;
+      line-height: 22px; }
+      .lou .wrap .choose .range a {
+        float: left;
+        height: 22px;
+        padding: 0 18px;
+        color: #666;
+        border-right: 1px solid #e5e5e5; }
+      .lou .wrap .choose .range a:last-child {
+        border: none; }
+
+.ad .con > div {
+  width: 213px;
+  border: 1px solid #ebecee;
+  height: 408px;
+  position: relative;
+  float: left;
+  margin-right: 25px;
+  margin-bottom: 25px; }
+  .ad .con > div:hover {
+    border-color: #ff5577; }
+    .ad .con > div:hover .zxs {
+      display: block; }
+  .ad .con > div .zxs {
+    position: absolute;
+    bottom: 78px;
+    height: 24px;
+    width: 100%;
+    text-align: center;
+    line-height: 24px;
+    color: white;
+    background-color: rgba(253, 133, 156, 0.7);
+    display: none; }
+  .ad .con > div a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    color: #666; }
+    .ad .con > div a > span {
+      position: absolute;
+      top: 0;
+      left: 10px; }
+    .ad .con > div a > p {
+      margin-top: 6px;
+      line-height: 20px;
+      padding-left: 10px; }
+    .ad .con > div a div {
+      height: 32px;
+      line-height: 32px; }
+      .ad .con > div a div .now {
+        font-size: 12px;
+        padding-left: 10px;
+        font-weight: bold; }
+      .ad .con > div a div .old {
+        font-size: 10px;
+        color: #777;
+        padding-left: 10px;
+        text-decoration: line-through; }
+      .ad .con > div a div p {
+        padding-left: 19px;
+        padding-right: 10px;
+        color: #9999b2;
+        background: url(../img/iconimg/icon11.jpg) no-repeat left 9px;
+        float: right; }
+
+.bar {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  display: none;
+  top: 0px;
+  z-index: 20;
+  background: #fff;
+  box-shadow: 0 0 26px #dcdcdc; }
+  .bar .wrap div.left {
+    height: 50px;
+    float: left; }
+    .bar .wrap div.left a {
+      width: 144px;
+      height: 100%;
+      display: block;
+      background: url(/img/logo.png) no-repeat left center;
+      background-size: 142px 44px; }
+  .bar .wrap .top {
+    float: left;
+    margin-left: 170px;
+    margin-top: 7px;
+    border: 1px solid #ff0077;
+    height: 34px;
+    border-radius: 0 8px 8px 0; }
+    .bar .wrap .top .top-l {
+      color: #ff0077;
+      line-height: 34px;
+      text-align: center;
+      width: 60px;
+      height: 34px; }
+      .bar .wrap .top .top-l ul {
+        display: none;
+        width: 60px;
+        border: 1px solid #e5e5e5;
+        border-top: 1px solid #ff0077;
+        line-height: 30px;
+        padding-top: 1px;
+        position: absolute;
+        background: #fff;
+        margin-left: -1px; }
+        .bar .wrap .top .top-l ul a {
+          color: #ff0077; }
+        .bar .wrap .top .top-l ul li.active {
+          background: #ffeef4; }
+      .bar .wrap .top .top-l span {
+        display: block;
+        width: 100%;
+        height: 34px;
+        cursor: pointer;
+        background: url(../img/iconimg/icon6.jpg) no-repeat right 15px; }
+    .bar .wrap .top form {
+      position: relative; }
+      .bar .wrap .top form .txt {
+        height: 34px;
+        line-height: 34px;
+        border: none;
+        outline: none;
+        color: #999;
+        padding-left: 9px;
+        font-size: 10px;
+        width: 310px; }
+      .bar .wrap .top form .btn {
+        border: none;
+        outline: none;
+        background: #ff1580;
+        width: 100px;
+        height: 34px;
+        border-radius: 0 8px 8px 0;
+        background-image: linear-gradient(to right, #f25, #ff1581);
+        font-size: 15px;
+        color: white;
+        text-align: center; }
+      .bar .wrap .top form .history {
+        position: absolute;
+        width: 320px;
+        height: 286px;
+        border: 1px solid #ff0077;
+        margin-left: -2px;
+        margin-top: 34px;
+        background: #fff;
+        display: none; }
+        .bar .wrap .top form .history h3 {
+          line-height: 16px;
+          height: 16px;
+          padding: 10px;
+          font-weight: normal;
+          color: #b5b5b5;
+          font-size: 12px; }

@@ -44,5 +44,14 @@ require(['config'],function(){
 			var html = template('search-hot',searchHot);
 			$('.wrap .center .bottom').html(html);
 		});
+
+		//猜我喜欢
+		$.getJSON('/data/cwxh.json',function(data){
+			var cwxh = {
+				list:data
+			};
+			html = template('cwxh',cwxh);
+			$('.ad .con').append(html);
+		});
 	})
 })
