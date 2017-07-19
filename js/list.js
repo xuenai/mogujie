@@ -46,12 +46,35 @@ require(['config'],function(){
 		});
 
 		//猜我喜欢
-		$.getJSON('/data/cwxh.json',function(data){
-			var cwxh = {
-				list:data
-			};
-			html = template('cwxh',cwxh);
-			$('.ad .con').append(html);
+		getJson('/data/cwxh.json');
+		function getJson(url){
+			$.getJSON(url,function(data){
+				var cwxh = {
+					list:data
+				};
+				html = template('cwxh',cwxh);
+				$('.ad').append(html);
+			});
+		}
+
+		//价格区间
+		$('.lou .range a').eq(0).on('click',function(){console.log(55);
+			$('.ad>div').hide();
+			getJson('/data/cwxh2.json');
 		});
+		$('.lou .range a').eq(1).on('click',function(){console.log(55);
+			$('.ad>div').hide();
+			getJson('/data/cwxh.json');
+		});
+		$('.lou .range a').eq(2).on('click',function(){console.log(55);
+			$('.ad>div').hide();
+			getJson('/data/cwxh2.json');
+		});
+
+		//让列表图片点击跳转到详情页面
+		$('.lou .ad').on('click','a',function(e){
+			e.preventDefault();
+			location = '/html/details2.html';
+		})
 	})
 })

@@ -45,6 +45,7 @@ require(['config'],function(){
 				$numinput.val(Number($numinput.val())-1);
 				$xj.text((price * Number($numinput.val())).toFixed(2));
 			};
+			countTotal();
 
 		});
 		$('.add').on('click',function(){
@@ -58,6 +59,7 @@ require(['config'],function(){
 				$numinput.val(Number($numinput.val())+1);
 				$xj.text((price * Number($numinput.val())).toFixed(2));
 			}
+			countTotal();
 		});
 		$('.num').on('focus',function(){
 			this.prevValue = $(this).val();
@@ -73,16 +75,65 @@ require(['config'],function(){
 			var $xj = $(this).parents('.good1').find('.pri');
 			var price = Number($(this).parents('.good1').find('.now').text());
 			$xj.text((price * Number($(this).val())).toFixed(2));
+			countTotal();
 		});
 
 		//单独复选框
-		console.log($('.good1>input'))
 		$('.good1>input').on('click',function(){
 			if($(this).prop('checked')){
 				$(this).parents('.good1').addClass('active');
 			}else{
 				$(this).parents('.good1').removeClass('active');
 			}
+			if($('.good1>input').length != $('.good1>input:checked').length){
+				$('#getall').prop('checked',false);
+			}else{
+				$('#getall').prop('checked',true);
+			}
+			countTotal();
+		});
+
+		//计算总价，总数量
+		function countTotal(){
+			var totalMoney = 0,totalCount = 0;
+			$('.compute .qfk').removeClass('active');
+			$('.good1>input:checked').each(function(i,elem){
+				var money = Number($(elem).parents('.good1').find('.pri').text());
+				var count = Number($(elem).parents('.good1').find('.num').val());
+				totalMoney += money;
+				totalCount += count;
+				$('.compute .qfk').addClass('active');
+			})
+			$('.compute .totalMoney').html(totalMoney.toFixed(2));
+			$('.compute .totalCount').html(totalCount);
+		}
+
+		//全选
+		$('#getall').on('click',function(){
+			if($(this).prop('checked')){
+				$('.good1>input').prop('checked',true).parents('.good1').addClass('active');
+				countTotal();
+			}else{
+				$('.good1>input').prop('checked',false).parents('.good1').removeClass('active');
+				countTotal();
+			}
+		});
+
+		//去结算
+		$('.compute .qfk').on('click',function(){
+			var toPay = [];
+			$('.good1>input:checked').parents('.good1').each(function(i,elem){
+				var product = {
+					des : $(elem).find('.center a').text(),
+					price : Number($(elem).find('.right .now').text()),
+					count : Number($(elem).find('.right .num').val()),
+					xj : Number($(elem).find('.right .pri').text()),
+					ruler : $(elem).find('.right span:first b:last').text() || "L",
+					img : $(elem).find('.center img').attr('src')
+				};
+				toPay.push(product);
+			});
+			$.cookie('toPay',toPay,{path:'/'});
 		})
 	})
 })

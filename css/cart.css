@@ -170,7 +170,7 @@
         float: right;
         margin-left: 13px; }
       .content .wrap .compute p a.active {
-        background-color: red; }
+        background-color: red !important; }
       .content .wrap .compute p .rmb, .content .wrap .compute p b {
         color: red;
         font-size: 20px;

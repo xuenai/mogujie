@@ -20,7 +20,7 @@
 				省：<span>*</span>
 				<select>
 					<option>北京市</option>
-					<option>上海市大家</option>
+					<option>上海市</option>
 					<option>深圳市</option>
 					<option>西红柿</option>
 				</select>
@@ -69,40 +69,41 @@
 				</div>
 			</div>
 
-			<div class="good1">
-				<div class="center">
-					<img src="/img/details/detailsimg1.jpg">
-					<p><a href="#">  凡兔女装2017夏装新款韩版女士裤子脚口开叉休闲阔腿九分裤女 装新款韩版女士裤子脚口开叉休闲阔腿九分裤女 </a></p>
-				</div>
-				<div class="right">
-					<span>颜色：<b>黑色</b><br>尺码：<b>L</b></span>
-					<span><b class='now'>55.80</b></span>
-					<span class='count'>1</span>
-					<span class='pri'>218</span>
-				</div>
-			</div>
+			<div class="products"></div>
+			<script type="text/html" id='toPay'>
+			<%
+			 var total = 0,count = 0;
+			 for(var i=0;i<list.length;i++){ 
+				var now = list[i];
+				total += now.xj;
+				count += now.count;
+			%>
 
-			<div class="good1">
-				<div class="center">
-					<img src="/img/details/detailsimg1.jpg">
-					<p><a href="#">  凡兔女装2017夏装新款韩版女士裤子脚口开叉休闲阔腿九分裤女 装新款韩版女士裤子脚口开叉休闲阔腿九分裤女 </a></p>
+				<div class="good1">
+					<div class="center">
+						<img src= <%= now.img %> >
+						<p><a href="#"> <%= now.des %> </a></p>
+					</div>
+					<div class="right">
+						<span>颜色：<b>黑色</b><br>尺码：<b><%= now.ruler %></b></span>
+						<span><b class='now'><%= now.price %></b></span>
+						<span class='count'> <%= now.count %> </span>
+						<span class='pri'> <%= now.xj %> </span>
+					</div>
 				</div>
-				<div class="right">
-					<span>颜色：<b>黑色</b><br>尺码：<b>L</b></span>
-					<span><b class='now'>55.80</b></span>
-					<span class='count'>1</span>
-					<span class='pri'>218</span>
-				</div>
-			</div>
 
-			<div class="total">合计： <span>185.00</span></div>
-
+			<% } %>
+			<div class="total">合计： <span> <%= total.toFixed(2) %> </span></div>
 			<div class="compute">
 				<div class="le">
-					<a href="javascript:;">返回购物车</a>
+					<a href="/html/cart.html">返回购物车</a>
 				</div>
-				<p>共有	<span>0</span>	件商品,总计 <span class='rmb'>¥</span><b>0.00</b><a href="javascript:;">确认并付款 ＞ </a>	</p>
+				<p>共有	<span> <%= count %> </span>	件商品,总计 <span class='rmb'>¥</span><b><%= total.toFixed(2) %></b><a href="javascript:;">确认并付款 ＞ </a>	</p>
 			</div>
+
+			</script>
+
+
 		</div>
 	</div>
 </div>

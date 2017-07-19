@@ -165,37 +165,46 @@ require(['config'],function(){
 			    $imgs = $('.hotmen .con .left').find('img'),
 			    $ps = $('.hotmen .con .left').find('p'),index2pre = -1;
 			$.each(data,function(i,obj){
-				arrOut.push($.extend(true,{},obj));
+				arrOut.push(i);
 			});
 			$imgs.each(function(index,elem){
 				$(elem).attr({"src":data[index].url});
 				$ps.eq(index).text(data[index].title);
-				arrIn.push(data[index]);
+				arrIn.push(index);
 			});
 			timer = setInterval(function(){
 				var index = Math.floor(Math.random()*arrOut.length),index2 = Math.floor(Math.random()*arrIn.length),
 			   		$imgs = $('.hotmen .con .left').find('img'),$ps = $('.hotmen .con .left').find('p');
 				while($.inArray(arrOut[index],arrIn) != -1){
 					index = Math.floor(Math.random()*arrOut.length);
+					console.log(69696);
 				};
+				// console.log(index);
 				while(index2pre == index2){
 					index2 = Math.floor(Math.random()*arrIn.length);
 				};
 				//注意数组引用数据类型带来的问题，这里arrin，arrout都是原数组，arrin删除后把原数组也删除了
 				// console.log($ps.eq(index2).text())//之前获取到的$ps在这里已经变化了，不能在使用，要从新再次获取
 				for(var i=0,len=arrIn.length;i<len;i++){
-					if(arrIn[i].title==$ps.eq(index2).text()){
-						arrIn.splice(i,1,arrOut[index]);
+					if(data[arrIn[i]].title==$ps.eq(index2).text()){
+						arrIn.splice(i,1,arrOut[index]);//待会儿测试删除
 						break;
 					}
 				};
+				// $.each(arrIn,function(i,elem){
+				// 	if(i==index2){
+				// 		arrIn[i]=index;
+				// 		return false;
+				// 	}
+				// });
 				var t = new TimelineMax();
 				var nowa = $('.hotmen .con .left').children('a').eq(index2)[0];
 				t.to(nowa,0.5,{
 					rotationY:90,
 					onComplete:function(){
-						$imgs.eq(index2).attr({"src":arrOut[index].url});
-						$ps.eq(index2).text(arrOut[index].title);
+						console.log([index,index2]);
+						$imgs.eq(index2).attr({"src":data[arrOut[index]].url});
+						$ps.eq(index2).text(data[arrOut[index]].title);
 					}
 				});
 				t.to(nowa,0.5,{
@@ -340,6 +349,15 @@ require(['config'],function(){
 			})
 		})();
 
-		
+		//让大部分的a标签点击跳转到商品详情页面
+		$('.xians,.hotmen,.jxzt,.lou').find('a:not(#prev,#next)').on('click',function(e){
+			e.preventDefault();
+			location = '/html/details2.html';
+		});
+		//让搜索列表点击后跳转到列表页面
+		$('.banner .wrap').on('click','ul a',function(e){
+			e.preventDefault();
+			location = '/html/list.html';
+		});
 	});
 });

@@ -1,5 +1,7 @@
 require(['config'],function(){
 	require(['jquery','template','header','footer'],function($,template){
+		$.cookie.json = true;
+
 		//搜索栏部分
 		$('.search .top-l,.bar .top-l').hover(function(){
 			$(this).find('ul').show();
@@ -137,6 +139,7 @@ require(['config'],function(){
 
 		//立即购买
 		$('.btn a').on('click',function(){
+			var products = $.cookie('products') || [];
 			var product = 
 				{
 					des : $('.rgt p.title').text(),
@@ -145,18 +148,31 @@ require(['config'],function(){
 					ruler : $('.ruler .active').text() || "L",
 					img : $('.list .active img').attr('src')
 				}
-			$.cookie.json = true;
-			var products = $.cookie('products') || [];
 			products.push(product);
 			$.cookie('products',products,{expires:7,path:"/"});
 		});
 
 		require(['fly'],function(){
+			$.cookie.json = true;
 			//购物车
 			$('.detail .btn span').on('click',function(e){
+				var products = $.cookie('products') || [];
+				var product = 
+					{
+						des : $('.rgt p.title').text(),
+						price : [Number($('.rgt .price .now span').text().slice(1)),Number($('.rgt .price .old span').text().slice(1))],
+						count : Number($('#num').val()),
+						ruler : $('.ruler .active').text() || "L",
+						img : $('.list .active img').attr('src')
+					}
+				products.push(product);
+				$.cookie('products',products,{expires:7,path:"/"});
+
+
 				var src = $(this).parents('.detail').find('li.active img').attr('src');
-				var flyer = $('<img src="'+src+'" />');
+				var flyer = $('<img id="destory" src="'+src+'" style="width:50px;height:50px;border-radius:25px;" />');
 				var offset = $('.side a:first img').offset();
+
 				flyer.fly({
 					start:{
 						left : e.clientX,
@@ -169,11 +185,26 @@ require(['config'],function(){
 						height : 10
 					},
 					onEnd:function(){
-						console.log(1);
-						// this.destory();
+						var total = 0;
+						products = $.cookie('products');
+						$('#destory').remove();
+						$.each(products,function(i,obj){
+							total += obj.count;
+						});
+						$('.side .goodscount').html(total);
+						console.log(products);
 					}
 				})
-			})
+			});
+			countgoods();
+			function countgoods(){
+				var products = $.cookie('products') || [];
+				var total = 0;
+				$.each(products,function(i,obj){
+					total += obj.count;
+				});
+				$('.side .goodscount').html(total);
+			}
 		})
 	})
 })
