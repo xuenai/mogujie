@@ -350,7 +350,7 @@ require(['config'],function(){
 		})();
 
 		//让大部分的a标签点击跳转到商品详情页面
-		$('.xians,.hotmen,.jxzt,.lou').find('a:not(#prev,#next)').on('click',function(e){
+		$('.xians,.hotmen,#lou,.jxzt').on('click','a:not(#prev,#next)',function(e){
 			e.preventDefault();
 			location = '/html/details2.html';
 		});
