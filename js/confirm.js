@@ -24,5 +24,13 @@ require(['config'],function(){
 			var html = template('toPay',data);
 			$('.confirm .products').append(html);
 		})();
+
+
+		//手机验证
+		$('.address .tel input').on('blur',function(){
+			var reg = /^1\d{10}/;
+			if(!reg.test($(this).val())) $(this).siblings('.message').show();
+			else $(this).siblings('.message').hide();
+		});
 	})
 })

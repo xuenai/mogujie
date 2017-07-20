@@ -52,7 +52,8 @@ require(['config'],function(){
 				$.cookie.json = true;
 				$.cookie('user',{
 					username : $('#tel').val(),
-					country :　$('select').val()
+					country :　$('select').val(),
+					password : $('#psw').val()
 				},{expires:7,path:"/"});
 				location = '/';
 				e.preventDefault();				
@@ -63,4 +64,3 @@ require(['config'],function(){
 
 	})
 })
-//http://route.showapi.com/932-1?showapi_appid=29550&showapi_sign=08402fce064a484baad949d9a18f75e7&checkcode=&sid=&

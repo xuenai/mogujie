@@ -6,12 +6,14 @@ require(['config'],function(){
 			var user = $.cookie('user') || {},hasuser = false;
 			$.each(user,function(key,value){
 				if(key == 'username' && value == $('.tel input').val()){
-					hasuser = true;
-					return false;
+					if($('.psw input').val()==user.password){
+						hasuser = true;
+						return false;	
+					}
 				}
 			});
 			if(hasuser) location = '/';
-			else alert('用户名未注册！');
+			else alert('用户名或密码错误！');
 		});
 	});
 })

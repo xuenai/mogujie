@@ -135,7 +135,7 @@ require(['config'],function(){
 			$('.bannershow').hover(function(){
 				clearInterval(timer);
 			},function(){
-				timer = setInterval(go,2000);
+				timer = setInterval(go,3000);
 			});
 		});
 

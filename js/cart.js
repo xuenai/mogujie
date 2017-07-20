@@ -26,9 +26,10 @@ require(['config'],function(){
 
 		//删除
 		$('.good1').on('click','.delate',function(e){
+			var products = $.cookie('products') || [];
 			var index = $('.good1').index($(this).parents('.good1'));
 			products.splice(index,1);
-			$.cookie('products',products);
+			$.cookie('products',products,{path:'/'});
 			$(this).parents('.good1').remove();
 		});
 
@@ -118,6 +119,10 @@ require(['config'],function(){
 				countTotal();
 			}
 		});
+		//清楚所有商品
+		$('#delateAll').on('click',function(){
+			$('.good1').find('.delate').trigger('click');
+		})
 
 		//去结算
 		$('.compute .qfk').on('click',function(){
@@ -135,5 +140,16 @@ require(['config'],function(){
 			});
 			$.cookie('toPay',toPay,{path:'/'});
 		})
+
+		//侧边栏购物车数量
+		countgoods();
+		function countgoods(){
+			var products = $.cookie('products') || [];
+			var total = 0;
+			$.each(products,function(i,obj){
+				total += obj.count;
+			});
+			$('.side .goodscount').html(total);
+		}
 	})
 })

@@ -11,12 +11,14 @@
 <script type="text/javascript" src="lib/tweenmax/TweenMax.min.js"></script>
 <script type="text/javascript" src="lib/jquery/jquery-1.12.4.min.js"></script>
 </head>
-<body>
+<body style='height:2000px;position:relative;'>
 <div id="e"></div>
 <div class="f">1</div>
 <div class="f">2</div>
 <div class="f">3</div>
+<input type='text' />
 <div></div>
+<div class='tx' style='position:absolute;top:1900px;'>35545465456</div>
 <script type="text/html" id="test">
 	<% var dat = list %>
 		<p style="background:<%= dat[1] %>"><%= dat[0] %></p>
@@ -52,6 +54,18 @@
 	},3000)
 
 console.log($('#e,.f'))
+
+$('input').blur([1,2],function(e){
+	console.log(e.data);
+})
+$(window).on('keydown',function(){
+	// alert(0);
+})
+console.log($('div.tx').offset())
+var i = 0;
+$('input').on('key',function(){
+	console.log(i += 1);
+})
 </script>
 </body>
 </html>
